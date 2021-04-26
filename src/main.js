@@ -1,10 +1,10 @@
 /* eslint-disable import/named */
 // Este es el punto de entrada de tu aplicacion
-import { router} from './lib/enrutador.js';
-//import { formularioRegistro} from './lib/vistas.js';
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
 
-//import { registro} from './lib/registrar.js'
-//registro()
+
+import { router} from './lib/enrutador.js';
 
 const init = () => {
     //pintar la vista en la que estoy
@@ -16,6 +16,3 @@ const init = () => {
       });
 }
 init();
-
-
-//formularioRegistro();
