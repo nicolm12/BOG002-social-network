@@ -1,9 +1,10 @@
 // aqui exportaras las funciones que necesites
 
-import { formularioRegistro} from './vistas.js';
+import { formularioRegistro, formularioInicio } from './vistas.js';
 import { registro } from './registrar.js';
 
 const idRegistro = document.querySelector('#registro');
+const idInicio = document.querySelector('#inicio');
 const logo = document.getElementById("seccionInicio");
 
 export const router = (route,componenteHtml,componenteInicio) => {
@@ -11,9 +12,11 @@ export const router = (route,componenteHtml,componenteInicio) => {
   console.log(route);
   switch (route) {
     case '#/inicio':
-      console.log('aiuda');
+      logo.style.display ="none";
+     idInicio.innerHTML = `<formulario-inicio></formulario-inicio>`
+     formularioInicio();
       break;
-    case '#/registro': 
+    case '#/registro':
     logo.style.display ="none";
     idRegistro.innerHTML=`<formulario-registro></formulario-registro>`
     formularioRegistro();

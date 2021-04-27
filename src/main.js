@@ -14,5 +14,5 @@ const init = () => {
       var componenteRegistro = document.querySelector(".opcionesRegistro");
         router(window.location.hash,componenteRegistro,componenteInicio);
       });
-}
+};
 init();
