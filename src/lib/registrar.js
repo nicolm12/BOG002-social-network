@@ -1,27 +1,23 @@
+export function registro() {
+  const botonregistro = document.querySelector('.registerbtn');
 
-
-export function registro(){
- let botonregistro= document.querySelector('.registerbtn');
-
-
-botonregistro.addEventListener('click', ()=>{ 
-    var email=document.getElementById("email").value;
-    var password=document.getElementById("psw").value;
+  botonregistro.addEventListener('click', () => {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('psw').value;
     firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then((userCredential) => {
+      .then((userCredential) => {
       // Signed in
-      var user = userCredential.user;
+        const user = userCredential.user;
       // ...
-    })
-    .catch((error) => {
-      var errorCode = error.code;
-      console.log(errorCode)
-      var errorMessage = error.message;
-      console.log(errorMessage)
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        console.log(errorCode);
+        const errorMessage = error.message;
+        console.log(errorMessage);
       // ..
-    });});
-
+      });
+  });
 }
-
 
 /**/
