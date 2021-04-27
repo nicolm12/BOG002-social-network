@@ -1,18 +1,31 @@
-/* eslint-disable import/named */
-// Este es el punto de entrada de tu aplicacion
-// Firebase App (the core Firebase SDK) is always required and
-// must be listed before other Firebase SDKs
 
 
 import { router} from './lib/enrutador.js';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 80177e3c158bdbb645b53afcc9a313d9230e72be
 
 const init = () => {
-    //pintar la vista en la que estoy
+   
     window.addEventListener('hashchange', () => {
       
       var componenteInicio = document.querySelector(".opcionesInicio");
       var componenteRegistro = document.querySelector(".opcionesRegistro");
         router(window.location.hash,componenteRegistro,componenteInicio);
       });
+<<<<<<< HEAD
 };
 init();
+=======
+}
+init();
+
+
+
+
+
+
+
+
+>>>>>>> 80177e3c158bdbb645b53afcc9a313d9230e72be

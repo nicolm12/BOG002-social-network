@@ -91,6 +91,7 @@ body{
 * {box-sizing: border-box}
 
 
+<<<<<<< HEAD
 /* Add padding to containers */
 .container {
 padding: 16px;
@@ -110,8 +111,32 @@ background: #f1f1f1;
 input[type=text]:focus, input[type=password]:focus {
 background-color: #ddd;
 outline: none;
+=======
+/* AQUI COMIENZA LA SECCION DE REGISTRO*/
+
+.registro{
+  display: grid;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+ grid-template-rows: 1fr;
+ row-gap:5em;
+ 
+ background-color: rgba(161, 5, 0, 0.79);
+
 }
 
+.fecha{
+  display: grid;
+  justify-content: center;
+ 
+  
+>>>>>>> 80177e3c158bdbb645b53afcc9a313d9230e72be
+}
+.superior{
+  display: grid;
+  grid-template-rows:1fr 1fr ;
+
+<<<<<<< HEAD
 /* Overwrite default styles of hr */
 hr {
 border: 1px solid #f1f1f1;
@@ -137,10 +162,100 @@ opacity:1;
 /* Add a blue text color to links */
 a {
 color: dodgerblue;
+=======
 }
 
+
+.botonRegistro{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+}
+.inputsRegistro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkboxRegistro{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:x-large;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.contenedorinputreregistro{
+  display: grid;
+  row-gap: 2em;
+  grid-template-rows: 1fr 1fr 1fr 3fr 1 fr 1 fr;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+.inicioGoogle {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 50% 50%;
+ justify-self: center;
+   justify-items: center;
+   align-items: center;
+   background-color:rgb(197, 187, 187);
+}
+
+.tituloRegistro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:x-large;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+>>>>>>> 80177e3c158bdbb645b53afcc9a313d9230e72be
+}
+.registroGoogle{
+  justify-self: start;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.inputRegistrarse{
+  border-color: transparent transparent white transparent;
+  font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    background-color: transparent;
+    font-size: 1.5em;
+  
+  }
+  ::placeholder{
+    color:rgb(247, 242, 219);
+  }
+
+<<<<<<< HEAD
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
 background-color: #f1f1f1;
 text-align: center;
 }
+=======
+  .registerbtn{
+    
+    background-color: white;
+     color: rgb(138, 22, 22);
+      height: 110%;
+      width: 35%;
+     border-radius: 5em;
+     border-color: transparent;
+     font-family: 'Cormorant Garamond', serif;
+     font-weight: bold;
+     font-size: 1.5em;
+   }
+   .inferior{
+    display: grid;
+    grid-template-rows: 1.3fr 1fr 2fr;
+    row-gap:1em ;
+  }
+  #start{
+    
+    font-size: 1.2em;
+  }
+  /* AQUI TERMINA LA SECCION DE REGISTRO*/
+>>>>>>> 80177e3c158bdbb645b53afcc9a313d9230e72be
