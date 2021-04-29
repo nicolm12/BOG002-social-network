@@ -2,7 +2,7 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable indent */
 export const formularioRegistro = () => {
-  class formRegistro extends HTMLElement {
+   class formRegistro extends HTMLElement {
   constructor() {
       super();
   }
@@ -11,15 +11,8 @@ export const formularioRegistro = () => {
       // eslint-disable-next-line quotes
       this.innerHTML = `<form action="">
       <div class="superior">
-       <div class="tituloRegistro"> <h1>Registro</h1></div>
-       
-        <div type="button" class="inicioGoogle">
-          <input type="image" name="boton" value="pasar" id="botongoogle"  src="./imagenes/simbologoogle.png" width="40%"  >
-         <div class=registroGoogle>Registro con Google</div>
-         </div>
-        
- 
-       </div>
+       <div> <h1>Registro</h1></div>
+       <div>Aca la imagen de google</div>
       </div>
  
       <div class="contenedorinputreregistro">
@@ -28,10 +21,10 @@ export const formularioRegistro = () => {
      </div>
      <div class="inputsRegistro"  > <input type="text" placeholder="Email" name="email" id="email" class="inputRegistrarse"  required>
      </div>
-      <div class="inputsRegistro"  ><input type="password" placeholder="Escribe tu contraseña" name="psw" id="psw" class="inputRegistrarse"  required>
+      <div class="inputsRegistro"  ><input type="password" placeholder="Enter Password" name="psw" id="psw" class="inputRegistrarse"  required>
       </div>
-      </div>
-    <div class="inferior">
+ 
+ 
        <div class="fecha">
        <input type="date" id="start" name="trip-start"
         value=""
@@ -44,7 +37,7 @@ export const formularioRegistro = () => {
         
  
         <div class="botonRegistro">
-          <button type="submit" class="registerbtn">Registrate</button></div>
+          <button type="submit" class="registerbtn">Register</button></div>
     </div>
     
     </form>`;
@@ -57,7 +50,6 @@ if (window.customElements.get('formulario-registro') === undefined) {
   window.customElements.get('formulario-registro');
 }
 };
-
 export const formularioInicio = () => {
   class formInicio extends HTMLElement {
   constructor() {
@@ -66,7 +58,22 @@ export const formularioInicio = () => {
 
   connectedCallback() {
       // eslint-disable-next-line quotes
-      this.innerHTML = `<h1>hola</h1>`;
+      this.innerHTML = `<form action="" method="POST" id="formularioInicio">
+      <div class="formulario">
+        <h1>Iniciar Sesión</h1>
+        <div class="grupo">
+          <input type="email" name="" id="name" required> <span class="barra"></span>
+          <label for="">Usuario</label>
+        </div>
+        <div class="grupo">
+          <input type="password" name="" id="name" required> <span class="barra"></span>
+          <label for="">Contraseña</label>
+        </div>
+        <button type="submit">Iniciar Sesión</button>
+      </div>
+      
+  
+    </form>`;
   }
 }
 
