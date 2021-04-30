@@ -37,7 +37,7 @@ export const formularioRegistro = () => {
         
  
         <div class="botonRegistro">
-          <button type="submit" class="registerbtn">Register</button></div>
+          <button type="submit" class="registerbtn" >Register</button></div>
     </div>
     
     </form>`;
@@ -62,14 +62,14 @@ export const formularioInicio = () => {
       <div class="formulario">
         <h1>Iniciar Sesión</h1>
         <div class="grupo">
-          <input type="email" name="" id="name" required> <span class="barra"></span>
+          <input type="email" name="" id="usser" required> <span class="barra"></span>
           <label for="">Usuario</label>
         </div>
         <div class="grupo">
-          <input type="password" name="" id="name" required> <span class="barra"></span>
+          <input type="password" name="" id="password" required> <span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
-        <button type="submit">Iniciar Sesión</button>
+        <button id="botonAcceder">Iniciar Sesión</button>
       </div>
       
   
