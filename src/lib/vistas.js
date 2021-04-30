@@ -2,17 +2,24 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable indent */
 export const formularioRegistro = () => {
-   class formRegistro extends HTMLElement {
+  class formRegistro extends HTMLElement {
   constructor() {
       super();
   }
 
   connectedCallback() {
       // eslint-disable-next-line quotes
-      this.innerHTML = `<form action="">
+      this.innerHTML =  `<form >
       <div class="superior">
-       <div> <h1>Registro</h1></div>
-       <div>Aca la imagen de google</div>
+       <div class="tituloRegistro"> <h1>Registro</h1></div>
+       
+        <div type="button" class="inicioGoogle" id=google>
+          <input type="image" name="boton" value="pasar" id="botongoogle"  src="./imagenes/simbologoogle.png" width="30%"  >
+         <div class=registroGoogle>Registro con Google</div>
+         </div>
+        
+ 
+       </div>
       </div>
  
       <div class="contenedorinputreregistro">
