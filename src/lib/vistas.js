@@ -1,4 +1,4 @@
-/* eslint-disable no-useless-constructor */
+/* Cambiarle el nombre a autenticacionRegistro */
 /* eslint-disable indent */
 export const formularioRegistro = () => {
 
