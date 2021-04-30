@@ -1,19 +1,27 @@
 // aqui exportaras las funciones que necesites
 
-import { formularioRegistro} from './vistas.js';
-import { registro,google} from './registrar.js';
+import { formularioRegistro, formularioInicio } from './vistas.js';
+import { registro } from './registrar.js';
 
 const idRegistro = document.querySelector('#registro');
-const logo=document.querySelector("#logo");
+const idInicio = document.querySelector('#inicio');
+const logo = document.getElementById('seccionInicio');
 
-export const router = (route,componenteHtml) => {
-  
-
+export const router = (route, componenteHtml, componenteInicio) => {
   idRegistro.innerHTML = '';
   console.log(route);
   switch (route) {
     case '#/inicio':
-      console.log('aiuda');
+      idInicio.style.display = 'block';
+      logo.style.display = 'none';
+      idInicio.innerHTML = '<formulario-inicio></formulario-inicio>';
+      formularioInicio();
+      break;
+    case '#/registro':
+      logo.style.display = 'none';
+      idRegistro.innerHTML = '<formulario-registro></formulario-registro>';
+      formularioRegistro();
+      registro();
       break;
     case '#/registro':
       logo.style.display="none";
@@ -27,4 +35,3 @@ export const router = (route,componenteHtml) => {
       return console.log('si funciona pero  esta enlazando la principal');
   }
 };
-console.log(typeof(router))
