@@ -3,13 +3,13 @@
 /* eslint-disable indent */
 export const formularioRegistro = () => {
   class formRegistro extends HTMLElement {
-  constructor() {
+    constructor() {
       super();
-  }
+    }
 
-  connectedCallback() {
+    connectedCallback() {
       // eslint-disable-next-line quotes
-      this.innerHTML =  `<form >
+      this.innerHTML = `<form >
       <div class="superior">
        <div class="tituloRegistro"> <h1>Registro</h1></div>
        
@@ -48,22 +48,22 @@ export const formularioRegistro = () => {
     </div>
     
     </form>`;
+    }
   }
-}
 
-if (window.customElements.get('formulario-registro') === undefined) {
-  window.customElements.define('formulario-registro', formRegistro);
-} else {
-  window.customElements.get('formulario-registro');
-}
+  if (window.customElements.get('formulario-registro') === undefined) {
+    window.customElements.define('formulario-registro', formRegistro);
+  } else {
+    window.customElements.get('formulario-registro');
+  }
 };
 export const formularioInicio = () => {
   class formInicio extends HTMLElement {
-  constructor() {
+    constructor() {
       super();
-  }
+    }
 
-  connectedCallback() {
+    connectedCallback() {
       // eslint-disable-next-line quotes
       this.innerHTML = `<form action="" method="POST" id="formularioInicio">
       <div class="formulario">
@@ -76,17 +76,17 @@ export const formularioInicio = () => {
           <input type="password" name="" id="password" required> <span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
-        <button id="botonAcceder">Iniciar Sesión</button>
+       <button id="botonAcceder">Iniciar Sesión</button>
       </div>
       
   
     </form>`;
+    }
   }
-}
 
-if (window.customElements.get('formulario-inicio') === undefined) {
-  window.customElements.define('formulario-inicio', formInicio);
-} else {
-  window.customElements.get('formulario-incio');
-}
+  if (window.customElements.get('formulario-inicio') === undefined) {
+    window.customElements.define('formulario-inicio', formInicio);
+  } else {
+    window.customElements.get('formulario-incio');
+  }
 };

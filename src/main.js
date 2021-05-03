@@ -1,10 +1,9 @@
 import { router } from './lib/enrutador.js';
 
 export const init = () => {
-   
-    window.addEventListener('hashchange', () => {
-      var componente=document.getElementById("opcionesInicio");
-        router(window.location.hash,componente);
-      });
+  window.addEventListener('hashchange', () => {
+    var componente = document.getElementById("opcionesInicio");
+    router(window.location.hash, componente);
+  });
 }
 init();
