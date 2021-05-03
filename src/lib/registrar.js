@@ -1,4 +1,3 @@
-
 export function registro(){
  let form= document.querySelector('#formularioRegistro');
 
