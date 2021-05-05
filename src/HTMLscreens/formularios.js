@@ -44,8 +44,15 @@ export const formularioRegistro = () => {
          </div>
         
  
+<<<<<<< HEAD:src/lib/vistas.js
         <div class="botonRegistro">
           <button type="submit" class="registerbtn" >Register</button></div>
+=======
+         <div class="botonRegistro">
+        
+         <a href="#/principal" class="registerbtn">  <button type="submit" >Registrate</button></a>
+         </div>
+>>>>>>> 7afbb1654fa3def0e0a769a6bec19a18cfa74947:src/HTMLscreens/formularios.js
     </div>
     
     </form>`;
@@ -77,7 +84,12 @@ export const formularioInicio = () => {
           <input type="password" name="" id="password2" required> <span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
+<<<<<<< HEAD:src/lib/vistas.js
        <button id="botonAcceder">Iniciar Sesión</button>
+=======
+        
+        <button id="botonAcceder"><a href="#/principal">Iniciar Sesión</a></button>
+>>>>>>> 7afbb1654fa3def0e0a769a6bec19a18cfa74947:src/HTMLscreens/formularios.js
       </div>
       
   
