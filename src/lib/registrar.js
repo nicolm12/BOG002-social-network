@@ -1,23 +1,29 @@
-export function registro() {
-  const botonregistro = document.querySelector('.registerbtn');
+export function registro(){
+ let form= document.querySelector('#formularioRegistro');
 
-  botonregistro.addEventListener('click', () => {
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('psw').value;
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault() ;
+    var email=document.getElementById("email").value;
+    var password=document.getElementById("psw").value;
     firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        console.log(errorCode);
-        const errorMessage = error.message;
-        console.log(errorMessage);
-        // ..
-      });
-  });
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      console.log(user)
+      console.log(email)
+      console.log(password)
+      
+      // ...
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      console.log(errorCode)
+      var errorMessage = error.message;
+      console.log(errorMessage)
+      // ..
+    });});
+
 }
 export function google() {
   let googleInicio = document.querySelector('#google');
