@@ -9,7 +9,7 @@ export const formularioRegistro = () => {
 
     connectedCallback() {
       // eslint-disable-next-line quotes
-      this.innerHTML =  `<form  id=formularioRegistro>
+      this.innerHTML =  `<form >
       <div class="superior">
        <div class="tituloRegistro"> <h1>Registro</h1></div>
        
