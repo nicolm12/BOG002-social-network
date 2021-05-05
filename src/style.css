@@ -14,79 +14,57 @@ body{
 }
 
 @media only screen and (max-width: 700px ){
-  #seccionInicio{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 40% 30% 30%;
-    height: 100vh;
-    justify-content: center;
-}
-  #seccionInicio .div{
-    text-align: center;
-}
-  #logo{
-      grid-column: 1/4;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      margin-top: 25px;
-      margin-bottom: 20px;
-  }
-  .opcionesInicio a {
-      background-color:transparent;
-  }
-  .opcionesInicio button{
-      background-color: rgba(161, 5, 0, 0.79);
-      border: none;
-      border-radius: 22px;
-      text-align: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size:x-large;
-      cursor: pointer;
-      color: white;
-      font-weight: bold;
-      justify-content: center;
-      align-content: center;
-      width: 140px;
-      height: 50px;
-  }
-    .opcionesInicio{
-      margin-top: 60px;
-      display: flex;
-      justify-content: center;
-      align-content: space-between;
-     grid-row: 2/3;
-     grid-column: 2/3;
+    #logo{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    #opcionesInicio a {
+        background-color: rgba(161, 5, 0, 0.79);
+        border: none;
+        margin: 20px;
+        margin-top: 40px;
+        padding: 10px;
+        width: 40%;
+        border-radius: 22px;
+        margin-left: 0%;
+        text-align: center;
+        font-size:x-large;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        
+    }
+    #opcionesInicio button{
+        background-color: transparent;
+        border: none;
+       
+        
+        border-radius: 22px;
+   
+        text-align: center;
+        font-family: 'Cormorant Garamond', serif;
+        font-size:x-large;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
 
-  }
-  .opcionesRegistro a {
-    background-color:transparent;
-  }
-.opcionesRegistro button{
-    background-color: rgba(161, 5, 0, 0.79);
-    border: none;
-    border-radius: 22px;
-    text-align: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size:x-large;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    justify-content: center;
-    align-content: center;
-    width: 140px;
-    height: 50px;
-}
+    }
+   
+    #opcionesInicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        margin-top: 70px;
 
-.opcionesRegistro{
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-   grid-row: 3/4;
-   grid-column: 2/3;
-    box-sizing: border-box
-  }
+    }
+
+* {box-sizing: border-box}
 
 
 /* AQUI COMIENZA LA SECCION DE REGISTRO*/
@@ -199,79 +177,80 @@ body{
     
     font-size: 1.2em;
   }
-  
   /* AQUI TERMINA LA SECCION DE REGISTRO*/
+
+
+  /*AQUI COMIENZA INICIO*/
+
   #inicio{
-  display: none;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: bold;
-  row-gap:5em;
-  background-color: rgba(161, 5, 0, 0.79);
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0%;
-  }
-  .formulario h1{
-    text-align: center;
-    font-size: x-large;
+    display: none;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
-
-  }
-  .grupo{
+    row-gap:5em;
+    background-color: rgba(161, 5, 0, 0.79);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    }
+    .formulario h1{
+      text-align: center;
+      font-size: x-large;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: bold;
+  
+    }
+    .grupo{
+      position: relative;
+      margin: 45px;
+    }
+   .grupo input{
+     background: none;
+     font-size: 18px;
+     padding: 10px 10px 10px 5px;
+     display: block;
+     width: 90%;
+     border: none;
+     border-bottom: 2px solid white;
+  
+    }
+    .grupo input:focus{
+      outline: none;
+      color:rgba(0, 0, 0, 0.90);
+  
+    }
+    .grupo label{
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+      top:10px;
+      transition: 0.5s ease all;
+      pointer-events: none;
+    }
+    .grupo input:focus~label{
+      top: -14px;
+      font-size: 15px;
+    }
+  .barra{
     position: relative;
-    margin: 45px;
+    display: block;
+    width: 100%;
   }
- .grupo input{
-   background: none;
-   font-size: 18px;
-   padding: 10px 10px 10px 5px;
-   display: block;
-   width: 90%;
-   border: none;
-   border-bottom: 2px solid white;
-
+  .formulario button{
+    font-family: 'Cormorant Garamond', serif; 
+    background: white; 
+    border: none;
+    border-radius: 5em;
+    display: block;
+    width: 80%;
+    font-size:1.5em;
+    font-weight: bold;
+    margin: 10px auto;
+    color: A10500;
+    height: 40px;
+    color: #A10500;
   }
-  .grupo input:focus{
-    outline: none;
-    color:rgba(0, 0, 0, 0.90);
-
-  }
-  .grupo label{
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 5px;
-    top:10px;
-    transition: 0.5s ease all;
-    pointer-events: none;
-  }
-  .grupo input:focus~label,
-   input:valid~label{
-    top: -14px;
-    font-size: 15px;
-  }
-.barra{
-  position: relative;
-  display: block;
-  width: 100%;
 }
-.formulario button{
-  font-family: 'Cormorant Garamond', serif; 
-  background: white; 
-  border: none;
-  border-radius: 5em;
-  display: block;
-  width: 80%;
-  font-size:1.5em;
-  font-weight: bold;
-  margin: 10px auto;
-  color: A10500;
-  height: 40px;
-  color: #A10500;
-
-
-}
-}
+  /*AQUI TERMINA INICIO*/
