@@ -1,15 +1,15 @@
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-useless-constructor */
+/* Cambiarle el nombre a autenticacionRegistro */
 /* eslint-disable indent */
 export const formularioRegistro = () => {
+
   class formRegistro extends HTMLElement {
-    constructor() {
+  constructor() {
       super();
     }
 
     connectedCallback() {
       // eslint-disable-next-line quotes
-      this.innerHTML = `<form >
+      this.innerHTML =  `<form >
       <div class="superior">
        <div class="tituloRegistro"> <h1>Registro</h1></div>
        
@@ -69,11 +69,11 @@ export const formularioInicio = () => {
       <div class="formulario">
         <h1>Iniciar Sesión</h1>
         <div class="grupo">
-          <input type="email" name="" id="usser" required> <span class="barra"></span>
+          <input type="email" name="" id="user2" required> <span class="barra"></span>
           <label for="">Usuario</label>
         </div>
         <div class="grupo">
-          <input type="password" name="" id="password" required> <span class="barra"></span>
+          <input type="password" name="" id="password2" required> <span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
        <button id="botonAcceder">Iniciar Sesión</button>

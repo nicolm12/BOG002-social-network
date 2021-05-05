@@ -1,3 +1,6 @@
+//aca pasar la funcion de firebase al dom
+//esto de aca abajo ni lo usamos xd
+
 import * as admin from 'firebase-admin';
 
 admin.initializeApp({

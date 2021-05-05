@@ -9,7 +9,7 @@ const idRegistro = document.querySelector('#registro');
 const logo = document.querySelector("#logo");
 const idInicio = document.querySelector('#inicio');
 
-export const router = (route, componenteHtml) => {
+export const router = (route, componenteHtml, componenteInicio) => {
   idRegistro.innerHTML = '';
   console.log(route);
   switch (route) {
@@ -29,8 +29,15 @@ export const router = (route, componenteHtml) => {
       registro();
       google();
       break;
+    case '#/registro':
+      logo.style.display="none";
+      componenteHtml.style.display="none"; 
+    idRegistro.innerHTML=`<formulario-registro></formulario-registro>`
+    formularioRegistro();
+    registro();
+    google();
+    break;
     default:
       return console.log('si funciona pero  esta enlazando la principal');
   }
 };
-console.log(typeof (router));
