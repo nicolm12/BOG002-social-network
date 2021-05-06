@@ -284,6 +284,8 @@ body{
   .logo {
     grid-column: 1/2;
     width: 5vw;
+    justify-content: center;
+    align-content: center;
 
   }
   .button-barra img {
