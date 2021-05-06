@@ -1,16 +1,15 @@
-/* Cambiarle el nombre a autenticacionRegistro */
+/* eslint-disable no-useless-constructor */
 /* eslint-disable indent */
 export const formularioRegistro = () => {
 
-  class formRegistro extends HTMLElement {
-  constructor() {
-      super();
-    }
+    class formRegistro extends HTMLElement {
+        constructor() {
+            super();
+        }
 
-    connectedCallback() {
-      // eslint-disable-next-line quotes
-
-      this.innerHTML =  `<form  id=formularioRegistro>
+        connectedCallback() {
+            // eslint-disable-next-line quotes
+            this.innerHTML = `<form  id=formularioRegistro>
       <div class="superior">
        <div class="tituloRegistro"> <h1>Registro</h1></div>
        
@@ -29,10 +28,10 @@ export const formularioRegistro = () => {
      </div>
      <div class="inputsRegistro"  > <input type="text" placeholder="Email" name="email" id="email" class="inputRegistrarse"  required>
      </div>
-      <div class="inputsRegistro"  ><input type="password" placeholder="Enter Password" name="psw" id="psw" class="inputRegistrarse"  required>
+      <div class="inputsRegistro"  ><input type="password" placeholder="Escribe tu contraseña" name="psw" id="psw" class="inputRegistrarse"  required>
       </div>
- 
- 
+      </div>
+    <div class="inferior">
        <div class="fecha">
        <input type="date" id="start" name="trip-start"
         value=""
@@ -51,32 +50,35 @@ export const formularioRegistro = () => {
     </div>
     
     </form>`;
+        }
     }
-  }
 
-  if (window.customElements.get('formulario-registro') === undefined) {
-    window.customElements.define('formulario-registro', formRegistro);
-  } else {
-    window.customElements.get('formulario-registro');
-  }
+
+    if (window.customElements.get("formulario-registro") === undefined) {
+        window.customElements.define("formulario-registro", formRegistro);
+    } else {
+        window.customElements.get("formulario-registro");
+    };
+
 };
-export const formularioInicio = () => {
-  class formInicio extends HTMLElement {
-    constructor() {
-      super();
-    }
 
-    connectedCallback() {
-      // eslint-disable-next-line quotes
-      this.innerHTML = `<form action="" method="POST" id="formularioInicio">
+export const formularioInicio = () => {
+    class formInicio extends HTMLElement {
+        constructor() {
+            super();
+        }
+
+        connectedCallback() {
+            // eslint-disable-next-line quotes
+            this.innerHTML = `<form action="" method="POST" id="formularioInicio">
       <div class="formulario">
         <h1>Iniciar Sesión</h1>
         <div class="grupo">
-          <input type="email" name="" id="user2" required> <span class="barra"></span>
+          <input type="email" name="" id="usser" required> <span class="barra"></span>
           <label for="">Usuario</label>
         </div>
         <div class="grupo">
-          <input type="password" name="" id="password2" required> <span class="barra"></span>
+          <input type="password" name="" id="password" required> <span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
         
@@ -85,13 +87,12 @@ export const formularioInicio = () => {
       
   
     </form>`;
+        }
     }
-  }
 
-  if (window.customElements.get('formulario-inicio') === undefined) {
-    window.customElements.define('formulario-inicio', formInicio);
-  } else {
-    window.customElements.get('formulario-incio');
-  }
+    if (window.customElements.get('formulario-inicio') === undefined) {
+        window.customElements.define('formulario-inicio', formInicio);
+    } else {
+        window.customElements.get('formulario-incio');
+    }
 };
-
