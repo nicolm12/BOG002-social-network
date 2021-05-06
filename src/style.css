@@ -19,30 +19,34 @@ body {
     display: block;
 }
 
-#barraHome {
-    display: flex;
-    flex-direction: row;
+.barraHome {
+    display: grid;
     background-color: white; 
+    height: 90px;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
-.opcionesInicio a {
+.opcionesInicio a,.opcionesRegistro a {
     background-color: rgba(161, 5, 0, 0.79);
     border: none;
-    margin: 20px;
-    margin-top: 40px;
     padding: 10px;
     border-radius: 22px;
-    margin-left: 0%;
+    margin-top:10px ;
+    margin: 0 20px;
     text-align: center;
     font-size: x-large;
     cursor: pointer;
     color: white;
     font-weight: bold;
-    flex-direction: row;
+    width: 100%;
+    border-color: transparent;
+    text-decoration: none;
+    grid-column: 2/4;
 }
 
-.opcionesInicio button {
+.opcionesInicio button { 
+    margin-top: 20px;
     background-color: transparent;
     border: none;
     border-radius: 22px;
@@ -52,18 +56,70 @@ body {
     cursor: pointer;
     color: white;
     font-weight: bold;
-    
+    width: 25vw;
+}
+.opcionesRegistro button {
+    margin-right: 0%;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 22px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: x-large;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    width: 25vw;
 }
 
-.opcionesInicio {
-    margin: 20px;
-    grid-column: 2/4;
+.opcionesInicio,.opcionesRegistro {
+    margin: 10px 20px;
 }
 #logoDesktop{
-    width: 30vw;
-
+    margin:0 30px;
 }
 
+.contenidoHome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.textoIntro{
+    grid-column: 1/2 ;
+    margin: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: x-large;
+}
+.textoIntro button{
+    background-color: rgba(161, 5, 0, 0.79);
+    border: none;
+    padding: 10px;
+    border-radius: 22px;
+    margin-top: 300em; ;
+    margin: 0 20px;
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    border-color: transparent;
+    text-decoration: none;
+    width: 50%;
+
+}
+.imagenHome{
+    grid-column: 2/3;
+    margin-left: 0%;
+    padding: 0%;
+}
+.imagenHome img{
+    width:80%;
+    margin: 0%;
+    padding: 0%;
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -83,6 +139,16 @@ body {
     .opcionesInicio a{
         grid-template-rows: 2/4;
         width: 40%;
+        margin-top: 50px;
+        margin-left: 5px;
+        padding:0%;
+        text-align: center;
+    }
+    .opcionesInicio button { 
+        text-align: center;
+        font-family: 'Cormorant Garamond', serif;
+        justify-content: center;
+        padding-bottom: 5px;
     }
     .opcionesInicio {
         display: flex;
@@ -90,8 +156,8 @@ body {
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
-        margin-left: 70px;
-        margin-top: 70px;
+        position: sticky;
+        padding-left: 20px;
     }
         * {
             box-sizing: border-box
@@ -276,13 +342,17 @@ body {
         /*AQUI TERMINA INICIO*/
         /*AQUI COMIENZA TEMPLATE DE BASE PARA MOVIL*/
         .container-barra {
+            z-index: 1;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             background-color: #ffff;
+            border-bottom:#888888 solid 2px;
         }
         .logo {
             grid-column: 1/2;
             width: 5vw;
+            margin-top: 5px;
+            margin-left: 10px;
         }
         .button-barra img {
             display: flex;
@@ -291,18 +361,22 @@ body {
             flex: 33%;
             padding: 6px 33%;
             position: sticky;
+            margin-top: 10px;
         }
         .container-menu {
+            z-index: 1;
             display: flex;
             background-color: #A32222;
             width: 100vw;
             bottom: 0;
             position: fixed;
+
         }
         .button-menu img {
-            width: 35vw;
+            width: 15vw;
             flex: 33%;
-            padding: 6px 33%;
+            padding: 7px;
+            margin:0 40px;
         }
         /*AQUI TERMINA TEMPLATE*/
     }

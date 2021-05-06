@@ -9,7 +9,7 @@ export const templateMovil = () => {
             this.innerHTML = ` <section id="baseMovil">
       <div class="container-barra">
         <div class="logo">
-            <img src="./imagenes/cine (1).png" width='160vw'>
+            <img src="./imagenes/cine (1).png" width='110vw'>
         </div>
         <div class="button-barra" id="publicar">
           <a href="#publicar"><img src="./imagenes/galeria-de-imagenes.png"></a>
