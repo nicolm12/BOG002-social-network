@@ -3,35 +3,38 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+    <section id="home">
+        <home-desktop></home-desktop>
+        <div class="movilfirst">
+            <div id="logo">
+                <img src="./imagenes/cine (1).png" width="60%">
+            </div>
+            <div class="opcionesInicio">
 
-  <div id="logo">
-    <img src="./imagenes/cine (1).png" width="60%">
-  </div>
-  <div id="opcionesInicio">
+                <a href="#/registro"><button>Registro</button></a>
 
-    <a href="#/registro"><button>Registro</button></a>
+                <a href="#/inicio"><button> Inicio</button></a>
+                <button>Skip</button>
+            </div>
+        </div>
+    </section>
 
-    <a href="#/inicio"><button> Inicio</button></a>
-    <button>Skip</button>
-  </div>
+    <section class="registro" id="registro"> </section>
 
+    <section id="inicio"></section>
 
-  <section class="registro" id="registro"> </section>
-
-  <section id="inicio"></section>
-
-  <div id="basePrimera"></div>
+    <div id="basePrimera"></div>
 
 
 
@@ -43,22 +46,21 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
-      <script type="text/javascript">
-
-
-      var firebaseConfig = {
-    apiKey: "AIzaSyB99_iQDmFqUJQJAOIUzadESWEIYjmUw4U",
-    authDomain: "social-network-59c00.firebaseapp.com",
-    databaseURL: "https://social-network-59c00-default-rtdb.firebaseio.com",
-    projectId: "social-network-59c00",
-    storageBucket: "social-network-59c00.appspot.com",
-    messagingSenderId: "1827746830",
-    appId: "1:1827746830:web:a10d244e0d5f84ae90f85f",
-    measurementId: "G-NT5XY0W918"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+    <script type="text/javascript">
+        var firebaseConfig = {
+            apiKey: "AIzaSyB99_iQDmFqUJQJAOIUzadESWEIYjmUw4U",
+            authDomain: "social-network-59c00.firebaseapp.com",
+            databaseURL: "https://social-network-59c00-default-rtdb.firebaseio.com",
+            projectId: "social-network-59c00",
+            storageBucket: "social-network-59c00.appspot.com",
+            messagingSenderId: "1827746830",
+            appId: "1:1827746830:web:a10d244e0d5f84ae90f85f",
+            measurementId: "G-NT5XY0W918"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
     </script>
     <script type="module" src="main.js"></script>
-  </body>
+</body>
+
 </html>

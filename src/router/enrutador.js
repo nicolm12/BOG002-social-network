@@ -10,7 +10,8 @@ const logo=document.querySelector("#logo");
 const idInicio = document.querySelector('#inicio');
 const basePrimera= document.querySelector('#basePrimera');
 const forminicio=document.querySelector('#inicio');
-const barras=document.querySelector('#baseMovil')
+const barras=document.querySelector('#baseMovil');
+const home= document.querySelector('#home')
 export const router = (route,componenteHtml) => {
 
   idRegistro.innerHTML = '';
@@ -19,14 +20,14 @@ export const router = (route,componenteHtml) => {
     case '#/inicio':
       idInicio.style.display = 'block';
       logo.style.display = 'none';
-      componenteHtml.style.display="none";
+      home.style.display = 'none';
       idInicio.innerHTML = '<formulario-inicio></formulario-inicio>';
       formularioInicio();
       ingreso();
       break;
     case '#/registro':
       logo.style.display="none";
-      componenteHtml.style.display="none";
+      home.style.display = 'none';
     idRegistro.innerHTML=`<formulario-registro></formulario-registro>`
     formularioRegistro();
     registro();
