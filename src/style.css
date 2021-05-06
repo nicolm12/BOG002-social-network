@@ -1,316 +1,317 @@
-body{
-    background-image: url(./imagenes/fondo.jpg);
-
-    width: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    box-sizing: content-box;
+body {
+  background-image: url(./imagenes/fondo.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: content-box;
 }
 
-@media only screen and (max-width: 700px ){
-    #logo{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
-    #opcionesInicio a {
-        background-color: rgba(161, 5, 0, 0.79);
-        border: none;
-        margin: 20px;
-        margin-top: 40px;
-        padding: 10px;
-        width: 40%;
-        border-radius: 22px;
-        margin-left: 0%;
-        text-align: center;
-        font-size:x-large;
-        cursor: pointer;
-        color: white;
-        font-weight: bold;
-
-    }
-    #opcionesInicio button{
-        background-color: transparent;
-        border: none;
-
-
-        border-radius: 22px;
-
-        text-align: center;
-        font-family: 'Cormorant Garamond', serif;
-        font-size:x-large;
-        cursor: pointer;
-        color: white;
-        font-weight: bold;
-
-    }
-
-    #opcionesInicio{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        margin-left: 30px;
-        margin-top: 70px;
-
-    }
-    * {box-sizing: border-box}
-
-
-/* AQUI COMIENZA LA SECCION DE REGISTRO*/
-
-.registro{
-  display: grid;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: bold;
- grid-template-rows: 1fr;
- row-gap:5em;
-
- background-color: rgba(161, 5, 0, 0.79);
-
+.movilfirst {
+  display: none;
 }
 
-.fecha{
-  display: grid;
-  justify-content: center;
-
-
-}
-.superior{
-  display: grid;
-  grid-template-rows:1fr 1fr ;
-
+.desktop {
+  display: block;
 }
 
-
-.botonRegistro{
+#barraHome {
   display: flex;
-  justify-content: center;
-  padding-bottom: 3em;
+  flex-direction: row;
+  background-color: white; 
+
 }
-.inputsRegistro{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.checkboxRegistro{
- display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:x-large;
+
+.opcionesInicio a {
+  background-color: rgba(161, 5, 0, 0.79);
+  border: none;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 22px;
+  margin-left: 0%;
+  text-align: center;
+  font-size: x-large;
   cursor: pointer;
   color: white;
   font-weight: bold;
-}
-.contenedorinputreregistro{
-  display: grid;
-  row-gap: 2em;
-  grid-template-rows: 1fr 1fr 1fr 3fr 1 fr 1 fr;
-  padding-top: 3em;
-  padding-bottom: 2em;
-}
-.inicioGoogle {
-  display: grid;
-  width: 80%;
-  height: 90%;
-  grid-template-columns: 35% 65%;
- justify-self: center;
-   justify-items: center;
-   align-items: center;
-   background-color:white;
+  flex-direction: row;
 }
 
-.tituloRegistro{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:x-large;
+.opcionesInicio button {
+  background-color: transparent;
+  border: none;
+  border-radius: 22px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: x-large;
   cursor: pointer;
   color: white;
   font-weight: bold;
+  
 }
-.registroGoogle{
-  justify-self: start;
-  font-size: 1.2em;
-  font-weight: bold;
+
+.opcionesInicio {
+  margin: 20px;
+  grid-column: 2/4;
 }
-.inputRegistrarse{
-  border-color: transparent transparent white transparent;
-  font-family: 'Cormorant Garamond', serif;
-    font-weight: bolder;
-    background-color: transparent;
-    font-size: 1.5em;
+#logoDesktop{
+  width: 30vw;
 
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .movilfirst {
+      display: block;
   }
-  ::placeholder{
-    color:rgb(247, 242, 219);
-  }
-
-  .registerbtn{
-    display: flex;
-    background-color:white;
-     color: rgb(138, 22, 22);
-      height: 110%;
-      width: 30%;
-     border-radius: 5em;
-
-     border: none;
-     justify-content: center;
-     text-decoration: none;
-
-   }
-
-   .registerbtn button{
-     background-color: transparent;
-        border: none;
-
-
-        border-radius: 22px;
-
-        text-align: center;
-        font-family: 'Cormorant Garamond', serif;
-        font-size:x-large;
-        cursor: pointer;
-        color: rgb(138, 22, 22);
-        font-weight: bold;
-
-   }
-   .inferior{
-    display: grid;
-    grid-template-rows: 1.3fr 1fr 2fr;
-    row-gap:1em ;
-  }
-  #start{
-
-    font-size: 1.2em;
-  }
-  /* AQUI TERMINA LA SECCION DE REGISTRO*/
-
-
-  /*AQUI COMIENZA INICIO*/
-
-  #inicio{
-    display: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: bold;
-    row-gap:5em;
-    background-color: rgba(161, 5, 0, 0.79);
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0%;
-    }
-    .formulario h1{
-      text-align: center;
-      font-size: x-large;
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: bold;
-
-    }
-    .grupo{
-      position: relative;
-      margin: 45px;
-    }
-   .grupo input{
-     background: none;
-     font-size: 18px;
-     padding: 10px 10px 10px 5px;
-     display: block;
-     width: 90%;
-     border: none;
-     border-bottom: 2px solid white;
-
-    }
-    .grupo input:focus{
-      outline: none;
-      color:rgba(0, 0, 0, 0.90);
-
-    }
-    .grupo label{
-      color: black;
-      font-size: 20px;
-      position: absolute;
-      bottom: 0;
-      left: 5px;
-      top:10px;
-      transition: 0.5s ease all;
-      pointer-events: none;
-    }
-    .grupo input:focus~label,
-     input:valid~label{
-      top: -14px;
-      font-size: 15px;
-    }
-  .barra{
-    position: relative;
-    display: block;
-    width: 100%;
-  }
-  .formulario button{
-    font-family: 'Cormorant Garamond', serif;
-    background: white;
-    border: none;
-    border-radius: 5em;
-    display: block;
-    width: 80%;
-    font-size:1.5em;
-    font-weight: bold;
-    margin: 10px auto;
-    color: A10500;
-    height: 40px;
-    color: #A10500;
-
-
-  }
-
-  /*AQUI TERMINA INICIO*/
-
-  /*AQUI COMIENZA TEMPLATE DE BASE PARA MOVIL*/
-
-.container-barra{
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr;
-  background-color: #ffff;
-  }
+<<<<<<< HEAD
   .logo {
     grid-column: 1/2;
     width: 5vw;
     justify-content: center;
     align-content: center;
 
+=======
+  .desktop {
+      display: none;
+>>>>>>> b9f6d94c7243f174d180356d6104313dacfdd5ff
   }
-  .button-barra img {
-    display: flex;
-    flex-direction: row;
-    width:35vw;
-    flex: 33%;
-    padding: 6px 33%;
-    position: sticky;
-
+  #logo {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-top: 25px;
+      margin-bottom: 20px;
   }
-
-  .container-menu {
-  display: flex;
-  background-color: #A32222;
-  width: 100vw;
-  bottom: 0;
-  position:fixed;
+  .opcionesInicio a{
+      grid-template-rows: 2/4;
+      width: 40%;
   }
-
-  .button-menu img {
-    width:35vw;
-    flex: 33%;
-    padding: 6px 33%;
+  .opcionesInicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      margin-left: 70px;
+      margin-top: 70px;
   }
-  /*AQUI TERMINA TEMPLATE*/
-
-}
+      * {
+          box-sizing: border-box
+      }
+      /* AQUI COMIENZA LA SECCION DE REGISTRO*/
+      .registro {
+          display: grid;
+          font-family: 'Cormorant Garamond', serif;
+          font-weight: bold;
+          grid-template-rows: 1fr;
+          row-gap: 5em;
+          background-color: rgba(161, 5, 0, 0.79);
+      }
+      .fecha {
+          display: grid;
+          justify-content: center;
+      }
+      .superior {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+      }
+      .botonRegistro {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 3em;
+      }
+      .inputsRegistro {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .checkboxRegistro {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: x-large;
+          cursor: pointer;
+          color: white;
+          font-weight: bold;
+      }
+      .contenedorinputreregistro {
+          display: grid;
+          row-gap: 2em;
+          grid-template-rows: 1fr 1fr 1fr 3fr 1 fr 1 fr;
+          padding-top: 3em;
+          padding-bottom: 2em;
+      }
+      .inicioGoogle {
+          display: grid;
+          width: 80%;
+          height: 90%;
+          grid-template-columns: 35% 65%;
+          justify-self: center;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+      }
+      .tituloRegistro {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: x-large;
+          cursor: pointer;
+          color: white;
+          font-weight: bold;
+      }
+      .registroGoogle {
+          justify-self: start;
+          font-size: 1.2em;
+          font-weight: bold;
+      }
+      .inputRegistrarse {
+          border-color: transparent transparent white transparent;
+          font-family: 'Cormorant Garamond', serif;
+          font-weight: bolder;
+          background-color: transparent;
+          font-size: 1.5em;
+      }
+       ::placeholder {
+          color: rgb(247, 242, 219);
+      }
+      .registerbtn {
+          display: flex;
+          background-color: white;
+          color: rgb(138, 22, 22);
+          height: 110%;
+          width: 30%;
+          border-radius: 5em;
+          border: none;
+          justify-content: center;
+          text-decoration: none;
+      }
+      .registerbtn button {
+          background-color: transparent;
+          border: none;
+          border-radius: 22px;
+          text-align: center;
+          font-family: 'Cormorant Garamond', serif;
+          font-size: x-large;
+          cursor: pointer;
+          color: rgb(138, 22, 22);
+          font-weight: bold;
+      }
+      .inferior {
+          display: grid;
+          grid-template-rows: 1.3fr 1fr 2fr;
+          row-gap: 1em;
+      }
+      #start {
+          font-size: 1.2em;
+      }
+      /* AQUI TERMINA LA SECCION DE REGISTRO*/
+      /*AQUI COMIENZA INICIO*/
+      #inicio {
+          display: none;
+          font-family: 'Cormorant Garamond', serif;
+          font-weight: bold;
+          row-gap: 5em;
+          background-color: rgba(161, 5, 0, 0.79);
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0%;
+      }
+      .formulario h1 {
+          text-align: center;
+          font-size: x-large;
+          font-family: 'Cormorant Garamond', serif;
+          font-weight: bold;
+      }
+      .grupo {
+          position: relative;
+          margin: 45px;
+      }
+      .grupo input {
+          background: none;
+          font-size: 18px;
+          padding: 10px 10px 10px 5px;
+          display: block;
+          width: 90%;
+          border: none;
+          border-bottom: 2px solid white;
+      }
+      .grupo input:focus {
+          outline: none;
+          color: rgba(0, 0, 0, 0.90);
+      }
+      .grupo label {
+          color: black;
+          font-size: 20px;
+          position: absolute;
+          bottom: 0;
+          left: 5px;
+          top: 10px;
+          transition: 0.5s ease all;
+          pointer-events: none;
+      }
+      .grupo input:focus~label,
+      input:valid~label {
+          top: -14px;
+          font-size: 15px;
+      }
+      .barra {
+          position: relative;
+          display: block;
+          width: 100%;
+      }
+      .formulario button {
+          font-family: 'Cormorant Garamond', serif;
+          background: white;
+          border: none;
+          border-radius: 5em;
+          display: block;
+          width: 80%;
+          font-size: 1.5em;
+          font-weight: bold;
+          margin: 10px auto;
+          color: A10500;
+          height: 40px;
+          color: #A10500;
+      }
+      /*AQUI TERMINA INICIO*/
+      /*AQUI COMIENZA TEMPLATE DE BASE PARA MOVIL*/
+      .container-barra {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          background-color: #ffff;
+      }
+      .logo {
+          grid-column: 1/2;
+          width: 5vw;
+      }
+      .button-barra img {
+          display: flex;
+          flex-direction: row;
+          width: 35vw;
+          flex: 33%;
+          padding: 6px 33%;
+          position: sticky;
+      }
+      .container-menu {
+          display: flex;
+          background-color: #A32222;
+          width: 100vw;
+          bottom: 0;
+          position: fixed;
+      }
+      .button-menu img {
+          width: 35vw;
+          flex: 33%;
+          padding: 6px 33%;
+      }
+      /*AQUI TERMINA TEMPLATE*/
+  }
