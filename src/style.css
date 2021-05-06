@@ -22,7 +22,7 @@ body {
 #barraHome {
   display: flex;
   flex-direction: row;
-  background-color: white; 
+  background-color: white;
 
 }
 
@@ -52,7 +52,7 @@ body {
   cursor: pointer;
   color: white;
   font-weight: bold;
-  
+
 }
 
 .opcionesInicio {
@@ -70,17 +70,8 @@ body {
   .movilfirst {
       display: block;
   }
-<<<<<<< HEAD
-  .logo {
-    grid-column: 1/2;
-    width: 5vw;
-    justify-content: center;
-    align-content: center;
-
-=======
   .desktop {
       display: none;
->>>>>>> b9f6d94c7243f174d180356d6104313dacfdd5ff
   }
   #logo {
       display: flex;
