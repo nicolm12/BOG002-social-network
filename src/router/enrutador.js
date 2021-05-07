@@ -34,6 +34,7 @@ export const router = (route,componenteHtml) => {
     google();
     break;
     default:
+      
       return console.log('si funciona pero  esta enlazando la principal');
 
       case '#/principal':
