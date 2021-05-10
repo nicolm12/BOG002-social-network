@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="home">
+        <home-desktop></home-desktop>
+        <div class="desktop">
+        <div class="contenidoHome">
+            <div class="textoIntro">
+             <p>Vive el cine, comparte con amigos la experiencia del cine. Personaliza tus post y vive una experiencia unica.</p>
+             <a href="#/principal"><button>Invitado</button></a>
+            </div>
+            <div class="imagenHome">
+            <img src="./imagenes/giphy.gif">
+            </div>
+        </div>
+        </div>
+        
+        <div class="movilfirst">
+            <div id="logo">
+                <img src="./imagenes/cine (1).png" width="60%">
+            </div>
+            <div class="opcionesInicio">
+
+                <a href="#/registro"><button>Registro</button></a>
+
+                <a href="#/inicio"><button> Inicio</button></a>
+                <button>Skip</button>
+            </div>
+        </div>
+    </section>
+<section class=" registrarse">
+    <home-desktop></home-desktop>
+    <div class="contenedorRegistro">
+      <div class=" registro" id="registro"></div>
+      <div class="imagenHome">
+        <img src="./imagenes/giphy.gif">
+      </div>
+    </div>
+    
+</section>
+    <section id="inicio"></section>
+
+    <div id="basePrimera"></div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script type="text/javascript">
+        var firebaseConfig = {
+            apiKey: "AIzaSyB99_iQDmFqUJQJAOIUzadESWEIYjmUw4U",
+            authDomain: "social-network-59c00.firebaseapp.com",
+            databaseURL: "https://social-network-59c00-default-rtdb.firebaseio.com",
+            projectId: "social-network-59c00",
+            storageBucket: "social-network-59c00.appspot.com",
+            messagingSenderId: "1827746830",
+            appId: "1:1827746830:web:a10d244e0d5f84ae90f85f",
+            measurementId: "G-NT5XY0W918"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
