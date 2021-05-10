@@ -1,5 +1,5 @@
 
-import {registroFirebaseEmail,googleFirebase} from '/firebase/firebase.js'
+import {registroFirebaseEmail,googleFirebase} from '../firebase/firebase.js'
 
 export function registro(){
  let form= document.querySelector('#formularioRegistro');
