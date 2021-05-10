@@ -39,7 +39,7 @@ export const formularioRegistro = () => {
        </div>
  
  
-        <div class="checkboxRegistro"><label><input type="checkbox" id="cbox1" value="first_checkbox">Terminos y condiciones</label><br>
+        <div class="contenedorRegistro"><label><input type="checkbox" id="cbox1" value="first_checkbox">Terminos y condiciones</label><br>
          </div>
         
  
