@@ -45,5 +45,8 @@ export const router = (route,componenteHtml) => {
         templateMovil();
 
         break
+
+      case '#/publicar':
+        
   }
 };

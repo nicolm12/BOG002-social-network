@@ -1,0 +1,276 @@
+[33mcommit c0ff10085801542485a05ce9a6c9688bb067520e[m[33m ([m[1;36mHEAD -> [m[1;32mmain2[m[33m, [m[1;31morigin/main2[m[33m)[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Fri May 7 11:26:07 2021 -0500
+
+    con pruebas de firestore
+
+[33mcommit 009bd156da388ae7a8c4f5fccfd982ffbe768b98[m
+Merge: b9f6d94 5ae017a
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Thu May 6 11:59:34 2021 -0500
+
+    ya con los cambios implementados
+
+[33mcommit 5ae017affe3e9d5564c808a8e9d3db227da7ce1a[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Thu May 6 11:49:44 2021 -0500
+
+    desktop en pagina inicial
+
+[33mcommit b9f6d94c7243f174d180356d6104313dacfdd5ff[m
+Merge: 82fc88e 490093b
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Thu May 6 08:57:45 2021 -0500
+
+    todo funcionando
+
+[33mcommit 82fc88ec39d1fe04bfb928882a55bc0ef5352e8c[m
+Merge: d468ed8 32bb543
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Thu May 6 08:50:18 2021 -0500
+
+    cambio de aleja funcionan
+
+[33mcommit d468ed8f6f57453163790338d45507b0c122cbcc[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Thu May 6 08:45:40 2021 -0500
+
+    no se que cambio hice
+
+[33mcommit 32bb543b1ef209f8416daea39c23c41bde1999bb[m
+Merge: 7afbb16 bb22a95
+Author: carfolacam98 <79459341+carfolacam98@users.noreply.github.com>
+Date:   Thu May 6 08:42:01 2021 -0500
+
+    Merge pull request #16 from aleja1201/main
+    
+    css responsive
+
+[33mcommit 490093b455671ee7b4353a4a0e56390fc83a7739[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Thu May 6 08:33:30 2021 -0500
+
+    modelos para desktop
+
+[33mcommit bb22a95f2af754852a4204ad30a0771df8f20da3[m
+Author: aleja1201 <iraicyahh@gmail.com>
+Date:   Wed May 5 12:25:29 2021 -0500
+
+    css
+
+[33mcommit 5ac1afe1cd6bfd75fd016d87cbcc0f2433e8f9cc[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Wed May 5 09:35:39 2021 -0500
+
+    commit
+
+[33mcommit d627b4ddbbc44366ab2cfa74e938f754b7163bcf[m
+Merge: ca811bb 7afbb16
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Wed May 5 09:35:26 2021 -0500
+
+    Merge branch 'main2' of https://github.com/carfolacam98/BOG002-social-network into carfolacam98-main2
+
+[33mcommit ca811bbb00a4ea3e38163314f84075dc738415de[m
+Merge: 818f8f5 a1aaefe
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Wed May 5 08:47:00 2021 -0500
+
+    Merge branch 'main' of https://github.com/nicolm12/BOG002-social-network
+
+[33mcommit a1aaefe9400d9a48e7de18caec21591b2a057710[m
+Merge: 2938ec3 4a4b90d
+Author: nicolm12 <75943321+nicolm12@users.noreply.github.com>
+Date:   Wed May 5 08:43:44 2021 -0500
+
+    Merge pull request #14 from carfolacam98/main
+    
+    main2
+
+[33mcommit 4a4b90d224c7fa84fc4e7842c7ea1e1d8e3aa58d[m
+Merge: 5265193 2938ec3
+Author: nicolm12 <75943321+nicolm12@users.noreply.github.com>
+Date:   Wed May 5 08:43:35 2021 -0500
+
+    Merge branch 'main' into main
+
+[33mcommit 818f8f55ca6c3389725ae461f8d8449afb3731fd[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Wed May 5 08:37:46 2021 -0500
+
+    commit realizado para merger a main
+
+[33mcommit 2938ec3f36ff2bfc029e49160b29f617488db54f[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Wed May 5 08:33:45 2021 -0500
+
+    cambios
+
+[33mcommit 2d19c0211e2001f76d922d1b5fb2b505e1b85c06[m
+Merge: 2336923 394d147
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Wed May 5 08:33:26 2021 -0500
+
+    Merge branch 'carfolacam98-nuevacorregida'
+
+[33mcommit 2336923d4ce03424fac0125629ccd002817ab49e[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Wed May 5 08:28:34 2021 -0500
+
+    todo se guardo en la carpeta main 2
+
+[33mcommit b2419a18ddbb27337fbe5fe2b32bb09ac030e046[m
+Merge: 8e3e68b 7afbb16
+Author: aleja1201 <79460631+aleja1201@users.noreply.github.com>
+Date:   Tue May 4 12:08:00 2021 -0500
+
+    Merge pull request #15 from carfolacam98/main2
+    
+    Main2
+
+[33mcommit 7afbb1654fa3def0e0a769a6bec19a18cfa74947[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Tue May 4 12:05:02 2021 -0500
+
+    Ya esta el template pero no funciona
+
+[33mcommit 5e59877d117fb520a5af6544bbf3ec05306ad0fe[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Mon May 3 14:16:39 2021 -0500
+
+    probando aun
+
+[33mcommit 895f550d8b0cd7defb3df1c8fdbc2a8117cc5e7f[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Mon May 3 14:14:13 2021 -0500
+
+    probando ramas
+
+[33mcommit 6cee56eb0927666d2b0e0d469bd0291e301d4564[m[33m ([m[1;31morigin/cambiosparatemplate[m[33m)[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Mon May 3 13:22:34 2021 -0500
+
+    jiji
+
+[33mcommit 394d1478702a08e732b8a044c40f179e1ce949e1[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Mon May 3 11:01:24 2021 -0500
+
+    cambios descargados
+
+[33mcommit 8a674549b8b3426d5bfe2e7d355536dde20cd6a8[m
+Merge: 32a19b0 8e6d9f7
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Mon May 3 11:00:32 2021 -0500
+
+    Merge branch 'nuevacorregida' of https://github.com/carfolacam98/BOG002-social-network into carfolacam98-nuevacorregida
+
+[33mcommit 32a19b0968ea4e881ecec658074dfd7d7c6fd785[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Mon May 3 10:56:37 2021 -0500
+
+    tenemos conflictos
+
+[33mcommit f5e63b272a23dc2392c48d38999fedc8688fa76a[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Mon May 3 10:49:36 2021 -0500
+
+    cambios en la rama de laura
+
+[33mcommit 8e6d9f7db2f5edba91bda5af45b415dabef29652[m[33m ([m[1;31morigin/nuevacorregida[m[33m, [m[1;32mnuevacorregida[m[33m)[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Mon May 3 10:36:50 2021 -0500
+
+    funciona inicio y registro
+
+[33mcommit 2e59e81bf3e94d7921eae1cc7343a446cddad33e[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Mon May 3 10:35:10 2021 -0500
+
+    Funciona registro e inicio
+
+[33mcommit 98fa62a3cc5d6967de203eb99a688f36c6ae8b92[m
+Merge: cda6211 b93bc56
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Fri Apr 30 11:12:43 2021 -0500
+
+    Merge branch 'main2' of https://github.com/carfolacam98/BOG002-social-network into carfolacam98-main2
+
+[33mcommit b93bc56ede5371dd3c6271a65d1b4abcbcc36807[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Fri Apr 30 10:55:33 2021 -0500
+
+    creo que ya
+
+[33mcommit d7b56747effc807517313e758ba591419ba92b17[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Fri Apr 30 10:47:38 2021 -0500
+
+    Ya esta todo junto
+
+[33mcommit cda6211b9ce27129d45d3939349d8886bc43e690[m
+Author: nicol <nicolmadero12@gmaicom>
+Date:   Fri Apr 30 09:54:18 2021 -0500
+
+    inicio de sesion con firebase
+
+[33mcommit 526519302a0f901784c484c58d0241241a47ff12[m
+Merge: aa2d57d ca462a7
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Fri Apr 30 09:50:51 2021 -0500
+
+    este es el merge
+
+[33mcommit aa2d57df5c228e960b79bd5624d2ab6014e4729d[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Fri Apr 30 09:39:59 2021 -0500
+
+    lo que tenia hasta el momento
+
+[33mcommit 8e3e68b6300ff281364cb57c0d33724d4200c06d[m
+Merge: c091560 2ec248a
+Author: aleja1201 <79460631+aleja1201@users.noreply.github.com>
+Date:   Thu Apr 29 10:42:58 2021 -0500
+
+    Merge pull request #12 from carfolacam98/main
+    
+    ahora si
+
+[33mcommit 2ec248ad32f0680bdda612aff7102d83cdd47f53[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Thu Apr 29 10:38:42 2021 -0500
+
+    ahora si
+
+[33mcommit c0915608f9f56ac95ac1cc8e563a0b47274477e5[m
+Merge: ed209b1 8b9e7ae
+Author: aleja1201 <79460631+aleja1201@users.noreply.github.com>
+Date:   Thu Apr 29 10:28:49 2021 -0500
+
+    Merge pull request #11 from carfolacam98/main
+    
+    Ya funciona todo
+
+[33mcommit 8b9e7ae88e13922d09ac2abf3a9111ad4e39f16a[m
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Thu Apr 29 10:15:38 2021 -0500
+
+    ya todito esta listo
+
+[33mcommit 2afcd86153bf984669679b16ab97c64769f15fcb[m
+Merge: 7c24e7d ed209b1
+Author: carfolacam98 <laura.carfolacam@gmail.com>
+Date:   Thu Apr 29 10:06:38 2021 -0500
+
+    se soluciono
+
+[33mcommit 7c24e7ddc5b691d9a5883cb0e62454a0261c0b48[m
+Merge: 517d574 d879402
+Author: carfolacam98 <79459341+carfolacam98@users.noreply.github.com>
+Date:   Thu Apr 29 09:56:11 2021 -0500
+
+    Merge pull request #10 from aleja1201/main
+    
+    inicio sesion google
+
+[33mcommit 517d574e9b8b43d0
