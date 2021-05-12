@@ -11,7 +11,7 @@ const idRegistro = document.querySelector('#registro');
 const logo=document.querySelector("#logo");
 const idInicio = document.querySelector('#inicio');
 const basePrimera= document.querySelector('#basePrimera');
-const formImagen= document.querySelector('#formImagen');
+const formPost= document.querySelector('#formPost');
 const forminicio=document.querySelector('#inicio');
 const barras=document.querySelector('#baseMovil');
 const home= document.querySelector('#home');
@@ -30,7 +30,7 @@ export const router = (route,componenteHtml) => {
       ingreso();
       break;
     case '#/registro':
-      sectionRegistro.style.display="block";
+      //sectionRegistro.style.display="block";
       logo.style.display="none";
       home.style.display = 'none';
     idRegistro.innerHTML=`<formulario-registro></formulario-registro>`
@@ -50,12 +50,11 @@ export const router = (route,componenteHtml) => {
       forminicio.style.display = "none";
       basePrimera.innerHTML = `<base-movil></base-movil>`;
       ingreso();
-
-        templateMovil();
+      templateMovil();
         
       case '#/publicar':
         //barras.style.display="none";
-        formImagen.innerHTML=`<formulario-imagenes></formulario-imagenes>`;
+        formPost.innerHTML=`<formulario-imagenes></formulario-imagenes>`;
 
         Subirimagen();
         //imagen();

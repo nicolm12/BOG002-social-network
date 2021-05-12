@@ -1,22 +1,22 @@
 body {
-  background-image: url(./imagenes/fondo.jpg);
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  box-sizing: content-box;
+    background-image: url(./imagenes/fondo.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: content-box;
 }
 
 .movilfirst {
-  display: none;
+    display: none;
 }
 
 .desktop {
-  display: block;
+    display: block;
 }
 
 .barraHome {
@@ -114,15 +114,174 @@ body {
     grid-column: 2/3;
     margin-left: 0%;
     padding: 0%;
+    justify-content: center;
+    align-content: center;
 }
 .imagenHome img{
     width:80%;
     margin: 0%;
     padding: 0%;
 }
-
+.registrarse{
+    display: none;
+}
+.contenedorRegistro{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: small;
+}
+.registro {
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    grid-template-rows: 1fr;
+    row-gap: 5em;
+    background-color: rgba(161, 5, 0, 0.79);
+    height: 90%;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    margin:5% 10% 5% 5%;
+}
+.fecha {
+    display: grid;
+    justify-content: center;
+}
+.superior {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.botonRegistro {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+.inputsRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.grupo {
+    position: relative;
+    margin: 45px;
+}
+.grupo input {
+    background: none;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.grupo input:focus {
+    outline: none;
+    color: rgba(0, 0, 0, 0.90);
+}
+.grupo label {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+.grupo input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 15px;
+}
+.checkboxRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.contenedorinputreregistro {
+    display: grid;
+    row-gap: 2em;
+    grid-template-rows: 1f ;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.inicioGoogle {
+    display: grid;
+    width: 60%;
+    height: 100%;
+    grid-template-columns: 35% 65%;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+.tituloRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.registroGoogle {
+    justify-self: start;
+    font-size: large;
+    font-weight: bold;
+}
+.inputRegistrarse {
+    border-color: transparent transparent white transparent;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    background-color: transparent;
+    font-size: 1.5em;
+}
+ ::placeholder {
+    color: rgb(247, 242, 219);
+}
+.registerbtn {
+    display: flex;
+    background-color: white;
+    color: rgb(138, 22, 22);
+    height: 110%;
+    width: 30%;
+    border-radius: 5em;
+    border: none;
+    justify-content: center;
+    text-decoration: none;
+}
+.registerbtn button {
+    background-color: transparent;
+    border: none;
+    border-radius: 22px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: x-large;
+    cursor: pointer;
+    color: rgb(138, 22, 22);
+    font-weight: bold;
+}
+.inferior {
+    display: grid;
+    grid-template-rows: 1.3fr 1fr 2fr;
+    row-gap: 1em;
+}
+#start {
+    font-size: 1.2em;
+}
 
 @media only screen and (max-width: 700px) {
+    .imagenHome{
+        display: none;
+    }
     .movilfirst {
         display: block;
     }
@@ -163,6 +322,14 @@ body {
             box-sizing: border-box
         }
         /* AQUI COMIENZA LA SECCION DE REGISTRO*/
+
+        .contenedorRegistro{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-content: center;
+            font-size: small;
+        }
         .registro {
             display: grid;
             font-family: 'Cormorant Garamond', serif;
@@ -170,6 +337,9 @@ body {
             grid-template-rows: 1fr;
             row-gap: 5em;
             background-color: rgba(161, 5, 0, 0.79);
+            margin: 0%;
+            width: 100%;
+            height: 100%;
         }
         .fecha {
             display: grid;
@@ -189,6 +359,38 @@ body {
             justify-content: center;
             align-items: center;
         }
+        .grupo {
+            position: relative;
+            margin: 45px;
+        }
+        .grupo input {
+            background: none;
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 90%;
+            border: none;
+            border-bottom: 2px solid white;
+        }
+        .grupo input:focus {
+            outline: none;
+            color: rgba(0, 0, 0, 0.90);
+        }
+        .grupo label {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+            top: 10px;
+            transition: 0.5s ease all;
+            pointer-events: none;
+        }
+        .grupo input:focus~label,
+        input:valid~label {
+            top: -14px;
+            font-size: 15px;
+        }
         .checkboxRegistro {
             display: flex;
             justify-content: center;
@@ -207,8 +409,8 @@ body {
         }
         .inicioGoogle {
             display: grid;
-            width: 80%;
-            height: 90%;
+            width: 90%;
+            height: 80%;
             grid-template-columns: 35% 65%;
             justify-self: center;
             justify-items: center;
