@@ -4,14 +4,18 @@ import { formularioRegistro,formularioInicio } from '../HTMLscreens/formularios.
 import { registro,google} from '../initpage/registrar.js';
 import { ingreso } from '../initpage/acceder.js';
 import{templateMovil} from '../HTMLscreens/baseMovil.js';
+import { Subirimagen } from '../HTMLscreens/post.js';
+//import { imagen } from '../initpage/postfirebase.js';
 
 const idRegistro = document.querySelector('#registro');
 const logo=document.querySelector("#logo");
 const idInicio = document.querySelector('#inicio');
 const basePrimera= document.querySelector('#basePrimera');
+const formImagen= document.querySelector('#formImagen');
 const forminicio=document.querySelector('#inicio');
 const barras=document.querySelector('#baseMovil');
-const home= document.querySelector('#home')
+const home= document.querySelector('#home');
+const sectionRegistro = document.querySelector ('.registrarse');
 export const router = (route,componenteHtml) => {
 
   idRegistro.innerHTML = '';
@@ -26,6 +30,7 @@ export const router = (route,componenteHtml) => {
       ingreso();
       break;
     case '#/registro':
+      sectionRegistro.style.display="block";
       logo.style.display="none";
       home.style.display = 'none';
     idRegistro.innerHTML=`<formulario-registro></formulario-registro>`
@@ -40,13 +45,20 @@ export const router = (route,componenteHtml) => {
       case '#/principal':
         // console.log("listo,enlazo");
         console.log(forminicio)
-        forminicio.style.display="none";
-        basePrimera.innerHTML=`<base-movil></base-movil>`
+        console.log("listo,enlazo");
+      console.log(forminicio)
+      forminicio.style.display = "none";
+      basePrimera.innerHTML = `<base-movil></base-movil>`;
+      ingreso();
+
         templateMovil();
-
-        break
-
-      case '#/publicar':
         
+      case '#/publicar':
+        //barras.style.display="none";
+        formImagen.innerHTML=`<formulario-imagenes></formulario-imagenes>`;
+
+        Subirimagen();
+        //imagen();
+        break
   }
 };
