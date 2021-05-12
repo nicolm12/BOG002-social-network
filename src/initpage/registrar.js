@@ -1,4 +1,3 @@
-
 import {registroFirebaseEmail,googleFirebase} from '../firebase/firebase.js'
 
 export function registro(){

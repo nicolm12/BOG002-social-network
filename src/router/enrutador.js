@@ -30,7 +30,7 @@ export const router = (route,componenteHtml) => {
       ingreso();
       break;
     case '#/registro':
-      //sectionRegistro.style.display="block";
+      sectionRegistro.style.display="block";
       logo.style.display="none";
       home.style.display = 'none';
     idRegistro.innerHTML=`<formulario-registro></formulario-registro>`
