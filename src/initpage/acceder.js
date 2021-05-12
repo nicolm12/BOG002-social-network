@@ -1,11 +1,12 @@
 import { inicioFirebase, observador } from '../firebase/firebase.js'
 export function ingreso() {
-    const form = document.getElementById("formularioInicio");
+    const form = document.querySelector(".formularioInicio");
     form.addEventListener("submit", (e) => {
-        console.log(e);
         e.preventDefault();
         const mail = document.getElementById("usser").value;
+        console.log(mail)
         const contraseña = document.getElementById("password").value;
+        console.log(contraseña)
         inicioFirebase(mail, contraseña)
 
     });

@@ -12,18 +12,18 @@ export const formularioRegistro = () => {
             this.innerHTML = `<form  id=formularioRegistro>
       <div class="superior">
        <div class="tituloRegistro"> <h1>Registro</h1></div>
-       
+
         <div type="button" class="inicioGoogle" id=google>
           <input type="image" name="boton" value="pasar" id="botongoogle"  src="./imagenes/simbologoogle.png" width="30%"  >
          <div class=registroGoogle>Registro con Google</div>
          </div>
-        
- 
+
+
        </div>
       </div>
- 
+
       <div class="contenedorinputreregistro">
- 
+
      <div class="inputsRegistro" ><input type="text" placeholder="Nombre de usuario" name="Usuario" id="Usuario" class="inputRegistrarse" required>
      </div>
      <div class="inputsRegistro"  > <input type="text" placeholder="Email" name="email" id="email" class="inputRegistrarse"  required>
@@ -37,18 +37,18 @@ export const formularioRegistro = () => {
         value=""
         min="1960-01-01" max="2005-01-01">
        </div>
- 
- 
+
+
         <div class="contenedorRegistro"><label><input type="checkbox" id="cbox1" value="first_checkbox">Terminos y condiciones</label><br>
          </div>
-        
- 
+
+
          <div class="botonRegistro">
-        
+
          <a href="#/principal" class="registerbtn">  <button type="submit" >Registrate</button></a>
          </div>
     </div>
-    
+
     </form>`;
         }
     }
@@ -70,7 +70,7 @@ export const formularioInicio = () => {
 
         connectedCallback() {
             // eslint-disable-next-line quotes
-            this.innerHTML = `<form action="" method="POST" id="formularioInicio">
+            this.innerHTML = `<form action="" method="POST" class="formularioInicio">
       <div class="formulario">
         <h1>Iniciar Sesión</h1>
         <div class="grupo">
@@ -81,11 +81,11 @@ export const formularioInicio = () => {
           <input type="password" name="" id="password" required> <span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
-        
-        <button id="botonAcceder"><a href="#/principal">Iniciar Sesión</a></button>
+
+        <button id="botonAcceder">Iniciar Sesion</button>
       </div>
-      
-  
+
+
     </form>`;
         }
     }
