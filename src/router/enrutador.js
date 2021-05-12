@@ -4,11 +4,14 @@ import { formularioRegistro,formularioInicio } from '../HTMLscreens/formularios.
 import { registro,google} from '../initpage/registrar.js';
 import { ingreso } from '../initpage/acceder.js';
 import{templateMovil} from '../HTMLscreens/baseMovil.js';
+import { Subirimagen } from '../HTMLscreens/post.js';
+import { imagen } from '../initpage/postfirebase.js';
 
 const idRegistro = document.querySelector('#registro');
 const logo=document.querySelector("#logo");
 const idInicio = document.querySelector('#inicio');
 const basePrimera= document.querySelector('#basePrimera');
+const formPost= document.querySelector('#formPost');
 const forminicio=document.querySelector('#inicio');
 const barras=document.querySelector('#baseMovil');
 const home= document.querySelector('#home');
@@ -35,16 +38,26 @@ export const router = (route,componenteHtml) => {
     registro();
     google();
     break;
+    
     default:
+      
       return console.log('si funciona pero  esta enlazando la principal');
 
       case '#/principal':
         // console.log("listo,enlazo");
         console.log(forminicio)
-        forminicio.style.display="none";
-        basePrimera.innerHTML=`<base-movil></base-movil>`
-        templateMovil();
-
+        console.log("listo,enlazo");
+      console.log(forminicio)
+      forminicio.style.display = "none";
+      basePrimera.innerHTML = `<base-movil></base-movil>`;
+    
+      templateMovil();
+        
+      case '#/publicar':
+        //barras.style.display="none";
+        formPost.innerHTML=`<formulario-imagenes></formulario-imagenes>`;
+        Subirimagen();
+        imagen();
         break
   }
 };

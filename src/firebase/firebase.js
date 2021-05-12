@@ -6,10 +6,7 @@ export function registroFirebaseEmail(email, password) {
             console.log(user)
             console.log(email)
             console.log(password)
-           if(user.uid){
-               location.href = "index.html#/principal"
-               return
-           }
+
             // ...
         })
         .catch((error) => {
@@ -53,19 +50,14 @@ export function inicioFirebase(mail, contraseña) {
             // Signed in
             var user = inicio.user;
             console.log("hace alguna cosa plis :/")
-            console.log(user.uid)
-            if(user.uid){
-                location.href = "index.html#/principal"
-                return
-            }
-            // ...
+                // ...
         })
         .catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
             if (errorCode === 'auth/wrong-password') {
-                alert('CONTRASEÑA INCORRECTA.');
+                alert('Wrong password.');
             } else {
                 alert(errorMessage);
             }

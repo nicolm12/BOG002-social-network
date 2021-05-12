@@ -41,12 +41,23 @@ export const formularioRegistro = () => {
 
         <div class="contenedorRegistro"><label><input type="checkbox" id="cbox1" value="first_checkbox">Terminos y condiciones</label><br>
          </div>
+<<<<<<< HEAD
 
 
          <div class="botonRegistro">
 
          <a href="#/principal" class="registerbtn">  <button type="submit" >Registrate</button></a>
+=======
+         <div class="botonRegistro">
+
+          <button type="submit" >Registrate</button>
+>>>>>>> b7f2b38780a989472bd57fa3147aa232ac1b8d1f
          </div>
+       
+    </div>
+    </div>
+ 
+         
     </div>
 
     </form>`;
@@ -81,8 +92,13 @@ export const formularioInicio = () => {
           <input type="password" name="" id="password" required> <span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
+<<<<<<< HEAD
 
         <button id="botonAcceder">Iniciar Sesion</button>
+=======
+        
+        <button id="botonAcceder">Iniciar Sesión</button>
+>>>>>>> b7f2b38780a989472bd57fa3147aa232ac1b8d1f
       </div>
 
 
