@@ -2,7 +2,7 @@
 
 import { router} from './router/enrutador.js';
 import { homeDesktop } from './HTMLscreens/desktop.js';
-import {firestore} from './firebase/firebase.js'
+import {firestore} from '../firebase/firebase.js'
 
 export const init = () => {
 

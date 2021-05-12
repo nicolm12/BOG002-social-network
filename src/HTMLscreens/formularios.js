@@ -41,12 +41,15 @@ export const formularioRegistro = () => {
  
         <div class="contenedorRegistro"><label><input type="checkbox" id="cbox1" value="first_checkbox">Terminos y condiciones</label><br>
          </div>
-        
- 
          <div class="botonRegistro">
-        
-         <a href="#/principal" class="registerbtn">  <button type="submit" >Registrate</button></a>
+
+          <button type="submit" >Registrate</button>
          </div>
+       
+    </div>
+    </div>
+ 
+         
     </div>
     
     </form>`;
@@ -82,7 +85,7 @@ export const formularioInicio = () => {
           <label for="">Contraseña</label>
         </div>
         
-        <button id="botonAcceder"><a href="#/principal">Iniciar Sesión</a></button>
+        <button id="botonAcceder">Iniciar Sesión</button>
       </div>
       
   
