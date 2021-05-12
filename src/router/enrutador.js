@@ -49,7 +49,7 @@ export const router = (route,componenteHtml) => {
       console.log(forminicio)
       forminicio.style.display = "none";
       basePrimera.innerHTML = `<base-movil></base-movil>`;
-      ingreso();
+    
       templateMovil();
         
       case '#/publicar':
