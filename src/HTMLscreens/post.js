@@ -10,6 +10,7 @@ export const Subirimagen = () => {
         
 <!-- CARD ELEMENT -->
 <div class="card">
+<div id="visual"></div>
     <img id="img-preview">
     <div class="card-footer">
         <input type="file" id="img-uploader">
