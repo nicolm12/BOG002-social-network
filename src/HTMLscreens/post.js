@@ -6,7 +6,7 @@ export const Subirimagen = () => {
 
         }
         connectedCallback() {
-            this.innerHTML =`<div class="container">
+            this.innerHTML = `<div class="container">
         
 <!-- CARD ELEMENT -->
 <div class="card">
@@ -16,16 +16,15 @@ export const Subirimagen = () => {
         <progress id="img-upload-bar" value="0" max="100" style="width: 100%"></progress>
     </div>
 </div>
-
 </div>`;
 
 
-}
-}
-if (window.customElements.get("formulario-imagenes") === undefined) {
-window.customElements.define("formulario-imagenes", formPost);
-} else {
-window.customElements.get("formulario-imagenes");
-};
+        }
+    }
+    if (window.customElements.get("formulario-imagenes") === undefined) {
+        window.customElements.define("formulario-imagenes", formPost);
+    } else {
+        window.customElements.get("formulario-imagenes");
+    };
 
 };

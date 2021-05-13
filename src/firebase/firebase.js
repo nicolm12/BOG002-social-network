@@ -1,14 +1,14 @@
 export function registroFirebaseEmail(email, password) {
     firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Signed in
-            var user = userCredential.user;
-            console.log(user)
-            console.log(email)
-            console.log(password)
-
-            // ...
-        })
+    .then((userCredential) => {
+        // Signed in
+        var user = userCredential.user;
+        console.log(user)
+        console.log(email)
+        console.log(password)
+       if(user.uid){
+           location.href = "#/principal"
+           return}})
         .catch((error) => {
             var errorCode = error.code;
             console.log(errorCode)
@@ -27,7 +27,11 @@ export function googleFirebase() {
         var user = result.user;
 
         console.log(user.displayName);
+        console.log(user);
         updateUser(user);
+        // if(user.uid){
+        //     location.href = "#/principal"
+        //     return}
         // ...
     }).catch(function(error) {
         // Handle Errors here.
@@ -43,21 +47,27 @@ export function googleFirebase() {
     });
 };
 
-export function inicioFirebase(mail, contraseña) {
 
+export function inicioFirebase(mail, contraseña) {
     firebase.auth().signInWithEmailAndPassword(mail, contraseña)
         .then((inicio) => {
             // Signed in
             var user = inicio.user;
             console.log("hace alguna cosa plis :/")
-                // ...
-        })
+            console.log(user.uid)
+            if(user.uid){
+                location.href = "#/principal"
+                return
+            }})
+            // ...
+
+        
         .catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
             if (errorCode === 'auth/wrong-password') {
-                alert('Wrong password.');
+                alert('Contraseña incorrecta');
             } else {
                 alert(errorMessage);
             }
@@ -79,3 +89,4 @@ export function observador() {
         }
     });
 };
+

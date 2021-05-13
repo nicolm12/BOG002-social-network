@@ -1,7 +1,7 @@
 // aqui exportaras las funciones que necesites
 
 import { formularioRegistro,formularioInicio } from '../HTMLscreens/formularios.js';
-import { registro,google} from '../initpage/registrar.js';
+import { registro,google,guardar} from '../initpage/registrar.js';
 import { ingreso } from '../initpage/acceder.js';
 import{templateMovil} from '../HTMLscreens/baseMovil.js';
 import { Subirimagen } from '../HTMLscreens/post.js';
@@ -37,6 +37,8 @@ export const router = (route,componenteHtml) => {
     formularioRegistro();
     registro();
     google();
+    guardar();
+    
     break;
     
     default:
