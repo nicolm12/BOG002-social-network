@@ -1,21 +1,21 @@
 export function registroFirebaseEmail(email, password) {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+   return firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
-        console.log(user)
-        console.log(email)
-        console.log(password)
        if(user.uid){
            location.href = "#/principal"
-           return}})
+           return
+        }
+        })
         .catch((error) => {
             var errorCode = error.code;
             console.log(errorCode)
             var errorMessage = error.message;
             console.log(errorMessage)
-                // ..
+               
         })
+        
 };
 
 export function googleFirebase() {
@@ -53,13 +53,17 @@ export function inicioFirebase(mail, contraseña) {
         .then((inicio) => {
             // Signed in
             var user = inicio.user;
-            console.log("hace alguna cosa plis :/")
+            
             console.log(user.uid)
             if(user.uid){
                 location.href = "#/principal"
-                return
-            }})
-            // ...
+                //return
+                
+               
+            }
+            console.log(inicioFirebase(mail,contraseña))
+        })
+            
 
         
         .catch(function(error) {
@@ -73,15 +77,13 @@ export function inicioFirebase(mail, contraseña) {
             }
             console.log(error);
         });
+
 }
 export function observador() {
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
             console.log("existe usuario y es: " + user);
-            // User is signed in, see docs for a list of available properties
-            // https://firebase.google.com/docs/reference/js/firebase.User
-
-            // ...
+            
         } else {
             console.log("no existe usuario");
             // User is signed out

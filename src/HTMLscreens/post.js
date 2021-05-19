@@ -6,15 +6,14 @@ export const Subirimagen = () => {
 
         }
         connectedCallback() {
-            this.innerHTML =`<div class="container">
+            this.innerHTML =`<div class="containerForm">
         
 <!-- CARD ELEMENT -->
 <div class="card">
 <div id="visual"></div>
-    <img id="img-preview">
     <div class="card-footer">
-        <input type="file" id="img-uploader">
-        <progress id="img-upload-bar" value="0" max="100" style="width: 100%"></progress>
+        <input type="file"  id="img-uploader">
+        <progress id="img-upload-bar" value=0 max="100" style="width: 100%"></progress>
     </div>
 </div>
 
