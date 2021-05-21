@@ -1,4 +1,4 @@
-import { inicioFirebase, observador } from '../firebase/firebase.js'
+import { inicioFirebase, observador,observadorRegistro } from '../firebase/firebase.js'
 export function ingreso() {
     const form = document.getElementById("formularioInicio");
     form.addEventListener("submit", (e) => {
@@ -12,4 +12,5 @@ export function ingreso() {
 }
 
 observador();
+observadorRegistro();
 console.log("estoy probando esta rama,ojala no se me haya desorganizado la modularizacion")

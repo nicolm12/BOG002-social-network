@@ -15,7 +15,8 @@ export const templateMovil = () => {
         <a href="#publicar"><img src="./imagenes/galeria-de-imagenes.png"></a>
       </div>
       <div class="button-barra" id="perfil">
-        <a href="#perfil"><img src="./imagenes/usuario.png"></a>
+      <h1 id="perfil1"></h1>
+  
       </div>
     </div>
   <div class="intermido"></div>

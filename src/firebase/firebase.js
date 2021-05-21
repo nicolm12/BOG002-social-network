@@ -1,26 +1,40 @@
 export function registroFirebaseEmail(email, password) {
     firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then((userCredential) => {
-        // Signed in
-        var user = userCredential.user;
-        console.log(user)
-        console.log(email)
-        console.log(password)
-       if(user.uid){
-           location.href = "#/principal"
-           return}})
+        .then((userCredential) => {
+            // Signed in
+            var user = userCredential.user;
+            console.log(user)
+            console.log(email)
+            console.log(password)
+            if (user.uid) {
+                
+                location.href = "#/principal"
+                return
+            }
+        })
         .catch((error) => {
             var errorCode = error.code;
             console.log(errorCode)
             var errorMessage = error.message;
             console.log(errorMessage)
-                // ..
+            // ..
         })
+}
+export function observadorRegistro(){
+    var user = firebase.auth().currentUser;
+    
+    if (user) {
+    //    document.getElementById('contenerdorPerfi').innerHTML='holamundo';
+       console.log(document.getElementById('contenerdorPerfi'));
+    } else {
+        // No user is signed in.
+    }
 };
+
 
 export function googleFirebase() {
     var provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider).then(function(result) {
+    firebase.auth().signInWithPopup(provider).then(function (result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
         // The signed-in user info.
@@ -33,7 +47,7 @@ export function googleFirebase() {
         //     location.href = "#/principal"
         //     return}
         // ...
-    }).catch(function(error) {
+    }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -55,14 +69,15 @@ export function inicioFirebase(mail, contraseña) {
             var user = inicio.user;
             console.log("hace alguna cosa plis :/")
             console.log(user.uid)
-            if(user.uid){
+            if (user.uid) {
                 location.href = "#/principal"
                 return
-            }})
-            // ...
+            }
+        })
+        // ...
 
-        
-        .catch(function(error) {
+
+        .catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
