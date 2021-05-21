@@ -11,6 +11,7 @@ export function registroFirebaseEmail(email, password) {
             console.log("pruebita ",errorCode)
             var errorMessage = error.message;
             console.log(errorMessage)
+            return false
                
         })
         
@@ -18,19 +19,12 @@ export function registroFirebaseEmail(email, password) {
 
 export function googleFirebase() {
     var provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider).then(function(result) {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        var token = result.credential.accessToken;
-        // The signed-in user info.
-        var user = result.user;
-
-        console.log(user.displayName);
-        console.log(user);
-        updateUser(user);
-        // if(user.uid){
-        //     location.href = "#/principal"
-        //     return}
-        // ...
+   return firebase.auth().signInWithPopup(provider).then(function(result) {
+       
+    location.href = "#/principal"
+        
+        return true;
+       
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -45,20 +39,12 @@ export function googleFirebase() {
     });
 };
 export function inicioFirebase(mail, contraseña) {
-    firebase.auth().signInWithEmailAndPassword(mail, contraseña)
+    return firebase.auth().signInWithEmailAndPassword(mail, contraseña)
         .then((inicio) => {
             // Signed in
-            var user = inicio.user;
-            
-            console.log(user.uid)
-            if(user.uid){
-                location.href = "#/principal"
-                //return
-                
-               
-            }
-            console.log(inicioFirebase(mail,contraseña))
-        })
+           // var user = inicio.user;
+            location.href = "#/principal"
+            return true})
             
 
         
@@ -75,18 +61,19 @@ export function inicioFirebase(mail, contraseña) {
         });
 
 }
-// export function observador() {
-//     firebase.auth().onAuthStateChanged((user) => {
-//         if (user) {
-//             console.log("existe usuario y es: " + user);
-            
-//         } else {
-//             console.log("no existe usuario");
-//             // User is signed out
-//             // ...
-//         }
-//     });
-// };
+export function observador() {
+   return firebase.auth().onAuthStateChanged((user) => {
+     if (user) {
+         return user
+         // console.log("existe usuario y es: " + user);
+         
+      } else {
+            console.log("no existe usuario");
+             // User is signed out
+             // ...
+         }
+     });
+ };
 
 //firestore
 // export let firestore=function(){

@@ -13,7 +13,7 @@ export const init = () => {
 
   
 }
-
+init();
 
 
 homeDesktop();
