@@ -13,8 +13,13 @@ export const init = () => {
 
   
 }
+<<<<<<< HEAD
 
 init();
+=======
+init();
+
+>>>>>>> 017389889fba0eef3254a1e5c36c9949a9482c93
 
 homeDesktop();
 
