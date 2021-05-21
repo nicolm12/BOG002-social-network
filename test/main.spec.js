@@ -1,10 +1,12 @@
  //importamos la funcion que vamos a testear
- import  init  from '../src/main.js';
+ import {init}   from '../src/main.js';
 
  
  describe('Init', () => {
    console.log(init)
+   console.log(typeof init)
+   
    it.skip('debería ser una función de inicializar', () => {
-  expect(typeof init).toBe('object');
+    console.log("yo que se")
  });
  });

@@ -1,16 +1,14 @@
 export function registroFirebaseEmail(email, password) {
-   return firebase.auth().createUserWithEmailAndPassword(email, password)
+    return firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
-        // Signed in
-        var user = userCredential.user;
-       if(user.uid){
-           location.href = "#/principal"
-           return
-        }
-        })
+
+            location.href = "#/principal";
+            return true
+         
+    })
         .catch((error) => {
             var errorCode = error.code;
-            console.log(errorCode)
+            console.log("pruebita ",errorCode)
             var errorMessage = error.message;
             console.log(errorMessage)
                
@@ -46,8 +44,6 @@ export function googleFirebase() {
         console.log(errorMessage);
     });
 };
-
-
 export function inicioFirebase(mail, contraseña) {
     firebase.auth().signInWithEmailAndPassword(mail, contraseña)
         .then((inicio) => {
@@ -79,18 +75,18 @@ export function inicioFirebase(mail, contraseña) {
         });
 
 }
-export function observador() {
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-            console.log("existe usuario y es: " + user);
+// export function observador() {
+//     firebase.auth().onAuthStateChanged((user) => {
+//         if (user) {
+//             console.log("existe usuario y es: " + user);
             
-        } else {
-            console.log("no existe usuario");
-            // User is signed out
-            // ...
-        }
-    });
-};
+//         } else {
+//             console.log("no existe usuario");
+//             // User is signed out
+//             // ...
+//         }
+//     });
+// };
 
 //firestore
 // export let firestore=function(){
