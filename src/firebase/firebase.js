@@ -1,34 +1,19 @@
 export function registroFirebaseEmail(email, password) {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Signed in
-            var user = userCredential.user;
-            console.log(user)
-            console.log(email)
-            console.log(password)
-            if (user.uid) {
-                
-                location.href = "#/principal"
-                return
-            }
-        })
+    return firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+
+            location.href = "#/principal";
+            return true
+         
+    })
         .catch((error) => {
             var errorCode = error.code;
-            console.log(errorCode)
+            console.log("pruebita ",errorCode)
             var errorMessage = error.message;
             console.log(errorMessage)
-            // ..
+               
         })
-}
-export function observadorRegistro(){
-    var user = firebase.auth().currentUser;
-    
-    if (user) {
-    //    document.getElementById('contenerdorPerfi').innerHTML='holamundo';
-       console.log(document.getElementById('contenerdorPerfi'));
-    } else {
-        // No user is signed in.
-    }
+        
 };
 
 
@@ -60,22 +45,22 @@ export function googleFirebase() {
         console.log(errorMessage);
     });
 };
-
-
 export function inicioFirebase(mail, contraseña) {
     firebase.auth().signInWithEmailAndPassword(mail, contraseña)
         .then((inicio) => {
             // Signed in
             var user = inicio.user;
-            console.log("hace alguna cosa plis :/")
+            
             console.log(user.uid)
             if (user.uid) {
                 location.href = "#/principal"
-                return
+                //return
+                
+               
             }
+            console.log(inicioFirebase(mail,contraseña))
         })
-        // ...
-
+            
 
         .catch(function (error) {
             // Handle Errors here.
@@ -88,20 +73,18 @@ export function inicioFirebase(mail, contraseña) {
             }
             console.log(error);
         });
-}
-export function observador() {
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-            console.log("existe usuario y es: " + user);
-            // User is signed in, see docs for a list of available properties
-            // https://firebase.google.com/docs/reference/js/firebase.User
 
-            // ...
-        } else {
-            console.log("no existe usuario");
-            // User is signed out
-            // ...
-        }
-    });
-};
+}
+// export function observador() {
+//     firebase.auth().onAuthStateChanged((user) => {
+//         if (user) {
+//             console.log("existe usuario y es: " + user);
+            
+//         } else {
+//             console.log("no existe usuario");
+//             // User is signed out
+//             // ...
+//         }
+//     });
+// };
 

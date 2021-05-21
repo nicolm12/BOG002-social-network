@@ -545,7 +545,7 @@ input:valid~label {
         /*AQUI TERMINA INICIO*/
         /*AQUI COMIENZA TEMPLATE DE BASE PARA MOVIL*/
         .container-barra {
-            z-index: 1;
+            z-index: 2;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             background-color: #ffff;
@@ -583,3 +583,8 @@ input:valid~label {
         }
         /*AQUI TERMINA TEMPLATE*/
     }
+    /*COMIENZA POSTEO*/
+
+    /* .containerForm{
+        display: none;
+    }  */
