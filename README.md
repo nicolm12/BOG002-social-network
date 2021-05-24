@@ -32,4 +32,4 @@ Tomando en cuenta el prototipo de baja fidelidad, buscamos estilos y colores que
 
 <img src="./imagenes/home.jpeg">
 <img src="./imagenes/inicio(1).jpeg">
-<img src="./imagenes/registroe.jpg">
+<img src="./imagenes/registro.jpeg">
