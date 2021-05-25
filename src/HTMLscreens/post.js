@@ -16,16 +16,15 @@ export const Subirimagen = () => {
         <progress id="img-upload-bar" value=0 max="100" style="width: 100%"></progress>
     </div>
 </div>
-
 </div>`;
 
 
-}
-}
-if (window.customElements.get("formulario-imagenes") === undefined) {
-window.customElements.define("formulario-imagenes", formPost);
-} else {
-window.customElements.get("formulario-imagenes");
-};
+        }
+    }
+    if (window.customElements.get("formulario-imagenes") === undefined) {
+        window.customElements.define("formulario-imagenes", formPost);
+    } else {
+        window.customElements.get("formulario-imagenes");
+    };
 
 };

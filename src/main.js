@@ -10,11 +10,10 @@ export const init = () => {
      router(window.location.hash);
       });
 }
-init();
 
+init(); 
 
 homeDesktop();
-
 
 //Coleccion de usuarios
 //firestore();

@@ -10,24 +10,24 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <section id="home">
         <home-desktop></home-desktop>
         <div class="desktop">
-        <div class="contenidoHome">
-            <div class="textoIntro">
-             <p>Vive el cine, comparte con amigos la experiencia del cine. Personaliza tus post y vive una experiencia unica.</p>
-             <a href="#/principal"><button>Invitado</button></a>
-            </div>
-            <div class="imagenHome">
-            <img src="./imagenes/giphy.gif">
+            <div class="contenidoHome">
+                <div class="textoIntro">
+                    <p>Vive el cine, comparte con amigos la experiencia del cine. Personaliza tus post y vive una
+                        experiencia unica.</p>
+                    <a href="#/principal"><button>Invitado</button></a>
+                </div>
+                <div class="imagenHome">
+                    <img src="./imagenes/giphy.gif">
+                </div>
             </div>
         </div>
-        </div>
-        
+
         <div class="movilfirst">
             <div id="logo">
                 <img src="./imagenes/cine (1).png" width="60%">
@@ -41,20 +41,24 @@
             </div>
         </div>
     </section>
-<section class=" registrarse">
-    <home-desktop></home-desktop>
-    <div class="contenedorRegistro">
-      <div class=" registro" id="registro"></div>
-      <div class="imagenHome">
-        <img src="./imagenes/giphy.gif">
-      </div>
-    </div>
-    
-</section>
+    <section class=" registrarse">
+        <home-desktop></home-desktop>
+        <div class="contenedorRegistro">
+            <div class=" registro" id="registro"></div>
+            <div class="imagenHome">
+                <img src="./imagenes/giphy.gif">
+            </div>
+        </div>
+
+    </section>
+
     <section id="inicio"></section>
 
-    <div id="basePrimera"></div>
-<section id="formPost"></section>
+    <div id="basePrimera">
+        <div id="contenerdorPerfi"></div>
+        
+    </div>
+    <section id="formPost"></section>
 
 
 
@@ -66,6 +70,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
+
 
 
     <script type="text/javascript">
@@ -81,7 +86,7 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-        var db=firebase.firestore();
+        var db = firebase.firestore();
     </script>
     <script type="module" src="main.js"></script>
 </body>

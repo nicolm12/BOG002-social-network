@@ -31,7 +31,8 @@ export const templateMovil = () => {
         </div>
       </div>
     </div>
-    </section>`;
+  </div>
+  </section>`;
 
 
     }
