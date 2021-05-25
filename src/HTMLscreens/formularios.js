@@ -42,8 +42,7 @@ export const formularioRegistro = () => {
         <div class="contenedorRegistro"><label><input type="checkbox" id="cbox1" value="first_checkbox">Terminos y condiciones</label><br>
          </div>
          <div class="botonRegistro">
-
-          <button type="submit" >Registrate</button>
+          <button type="submit" id="botonRegistrarse">Registrate</button>
          </div>
        
     </div>

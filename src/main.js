@@ -13,11 +13,10 @@ export const init = () => {
 
   
 }
-init();
 
+init(); 
 
 homeDesktop();
-
 
 //Coleccion de usuarios
 //firestore();

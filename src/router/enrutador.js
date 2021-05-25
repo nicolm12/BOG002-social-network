@@ -28,6 +28,7 @@ export const router = (route) => {
       idInicio.innerHTML = '<formulario-inicio></formulario-inicio>';
       formularioInicio();
       ingreso();
+      
       break;
     case '#/registro':
       sectionRegistro.style.display = "block";

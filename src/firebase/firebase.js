@@ -17,6 +17,7 @@ export function registroFirebaseEmail(email, password) {
         
 };
 
+
 export function googleFirebase() {
     var provider = new firebase.auth.GoogleAuthProvider();
    return firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -47,8 +48,7 @@ export function inicioFirebase(mail, contraseña) {
             return true})
             
 
-        
-        .catch(function(error) {
+        .catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
@@ -75,16 +75,3 @@ export function observador() {
      });
  };
 
-//firestore
-// export let firestore=function(){
-// db.collection("users").add({
-//     first: "Ada",
-//     last: "Lovelace",
-//     born: 1815
-//   })
-//   .then((docRef) => {
-//     console.log("Document written with ID: ", docRef.id);
-//   })
-//   .catch((error) => {
-//     console.error("Error adding document: ", error);
-//   })};
