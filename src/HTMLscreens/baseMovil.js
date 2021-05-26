@@ -6,7 +6,7 @@ export const templateMovil = () => {
 
     }
     connectedCallback() {
-      this.innerHTML = ` <section id="baseMovil">
+      this.innerHTML = ` <section id="baseMovil" class="movilfirst">
       <div class="container-barra">
         <div class="logo">
             <img src="./imagenes/cine (1).png" width='110vw'>

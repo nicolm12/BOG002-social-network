@@ -45,8 +45,8 @@ export const router = (route) => {
     case '#/principal':
       console.log("listo,enlazo");
       forminicio.style.display = "none";
-      basePrimera.innerHTML = `<base-movil></base-movil>`;
-
+      basePrimera.innerHTML = `<base-movil></base-movil><barra-principal></barra-principal> `;
+    
       templateMovil();
       break
 

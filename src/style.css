@@ -278,7 +278,86 @@ input:valid~label {
 #start {
     font-size: 1.2em;
 }
+.barraPrincipal{
+    display: grid;
+    background-color: white; 
+    height: 90px;
+    grid-template-columns: 1fr 15% 15% 15% 15% 12%;
 
+}
+.publicacion{
+grid-column: 2/3;
+
+
+}
+.publicacion img{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    margin: 10px;
+    margin-right: 5px; 
+    position: fixed;
+    
+}
+.perfilBoton{
+grid-column: 6/7;
+align-content: center;
+justify-content: center;
+
+}
+.perfilBoton img{
+    align-content: space-between;
+    justify-content: center;
+    margin: 7px;
+    margin-right: 5px; 
+}
+.amigos{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    align-content: center;
+    justify-content: center;
+    width: 80px;
+    border-bottom: solid 3px rgba(161, 5, 0, 0.79);
+}
+.amigos img{
+    align-content:center;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 0%;
+    position: fixed;
+
+}
+.search{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    align-content: center;
+    justify-content: center;
+    width: 80px;
+    border-bottom: solid 3px rgba(161, 5, 0, 0.79);
+}
+.search img{
+    align-content:center;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 0%;
+    position: fixed;
+}
+.likes{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-content: center;
+    justify-content: center;
+    width: 80px;
+    border-bottom: solid 3px rgba(161, 5, 0, 0.79);
+}
+.likes img{
+    align-content:center;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 0%;
+    position: fixed;
+}
+    
 @media only screen and (max-width: 700px) {
     .imagenHome{
         display: none;

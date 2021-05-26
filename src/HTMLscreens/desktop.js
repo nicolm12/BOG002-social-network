@@ -28,3 +28,34 @@ export const homeDesktop = () => {
     window.customElements.define("home-desktop", homeDesktop);
 
 };
+export const barraDesktop = () => {
+
+    class barraDesktop extends HTMLElement {
+        constructor() {
+            super();
+
+        }
+        connectedCallback() {
+            this.innerHTML = `<div class="desktop">
+            <div class="barraPrincipal">
+            <div class="publicacion" >
+            <a href="#/publicar"><img src="./imagenes/galeria-de-imagenes.png" width="60px"></a>
+            </div>
+            <div class="perfilBoton" >
+            <a href="#/perfil"><img src="./imagenes/usuario.png" width="70px"></a>
+            </div>
+            <div class="amigos">
+            <a href="#/amigo"><img src="./imagenes/apoyo.png" width="55px"></a>
+            </div>
+            <div class="search">
+            <a href="#/buscar"><img src="./imagenes/buscar.png" width="55px"></a>
+            </div>
+            <div class="likes">
+            <a href="#/megusta"><img src="./imagenes/cinema.png" width="55px"></a>
+            </div>
+            </div>
+            </div>`;
+        }
+    } 
+    window.customElements.define("barra-principal", barraDesktop) ;
+};

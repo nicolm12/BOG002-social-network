@@ -1,7 +1,8 @@
 
 
 import { router} from './router/enrutador.js';
-import { homeDesktop } from './HTMLscreens/desktop.js';
+import { homeDesktop, barraDesktop } from './HTMLscreens/desktop.js';
+
 
 
 export const init = () => {
@@ -17,6 +18,7 @@ export const init = () => {
 init(); 
 
 homeDesktop();
+barraDesktop ();
 
 //Coleccion de usuarios
 //firestore();
