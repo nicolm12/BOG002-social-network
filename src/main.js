@@ -7,12 +7,9 @@ import { homeDesktop, barraDesktop } from './HTMLscreens/desktop.js';
 
 export const init = () => {
 
-  return window.addEventListener('hashchange', () => {
-    var componente=document.getElementById("opcionesInicio");
-        router(window.location.hash,componente);
+   window.addEventListener('hashchange', () => {
+     router(window.location.hash);
       });
-
-  
 }
 
 init(); 
